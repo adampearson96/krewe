@@ -1,0 +1,57 @@
+@import "global";
+
+.hero-section {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  .outer-container {
+    display: flex;
+    position: relative;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: $spacing-s;
+    .logo {
+      display: block;
+      flex: 0 1 auto;
+      width: 280px;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        font-size: 0;
+      }
+    }
+    .subtitle {
+      display: block;
+      flex: 0 1 auto;
+      width: 280px;
+      margin-top: $spacing-xxl;
+      p {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+    }
+    .links {
+      display: block;
+      flex: 0 1 auto;
+      width: 280px;
+      font-size: 0;
+      .btn {
+        display: inline-block;
+        width: 132px;
+        color: $krewe-white;
+        background-color: $krewe-orange;
+        margin: $spacing-xs $spacing-s $spacing-xs 0;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

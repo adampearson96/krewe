@@ -10,9 +10,9 @@
   width: 100%;
   height: 100%;
   z-index: 99;
-  background: $krewe-white;
+  background: $krewe-black;
   overflow: hidden;
-  // pointer-events: none;
+  pointer-events: none;
   .landing-page-animation-outer-container {
     display: block;
     position: relative;
@@ -22,53 +22,53 @@
     .vertical-purple-squares {
       display: block;
       position: absolute;
-      width: 50px;
-      height: 100px;
+      width: 40px;
+      height: 80px;
       left: 80%;
       top: 5%;
       .square {
         display: block;
         position: relative;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background: $krewe-purple;
       }
     }
-    .horizontal-black-squares {
+    .horizontal-white-squares {
       display: block;
       position: absolute;
-      width: 100px;
-      height: 50px;
+      width: 80px;
+      height: 40px;
       top: 8%;
       left: 40%;
       .square {
         display: inline-block;
         position: relative;
-        width: 50px;
-        height: 50px;
-        background: $krewe-black;
+        width: 40px;
+        height: 40px;
+        background: $krewe-white;
       }
     }
-    .angled-black-shape {
+    .angled-white-shape {
       display: block;
       position: absolute;
-      width: 150px;
-      height: 150px;
+      width: 80px;
+      height: 80px;
       top: 27%;
       left: 80%;
       .shape {
         display: block;
         position: relative;
-        width: 150px;
-        height: 150px;
-        background: url(../media/angled-black-shape.png) top left/contain no-repeat;
+        width: 80px;
+        height: 80px;
+        background: url(../media/angled-white-shape.png) top left/contain no-repeat;
       }
     }
     .orange-square {
       display: block;
       position: absolute;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       left: 20%;
       top: 42%;
       background: $krewe-orange;
@@ -76,52 +76,46 @@
     .horizontal-purple-squares {
      display: block;
      position: absolute;
-     width: 100px;
-     height: 100px;
+     width: 80px;
+     height: 80px;
      left: 66%;
      top: 53%;
      .square {
        display: inline-block;
        position: relative;
-       width: 50px;
-       height: 50px;
+       width: 40px;
+       height: 40px;
        background: $krewe-purple;
      }
     }
     .angled-blue-shape {
       display: block;
       position: absolute;
-      width: 150px;
-      height: 150px;
+      width: 80px;
+      height: 80px;
       left: 53%;
       top: 64%;
       .shape {
         display: block;
         position: relative;
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
         background: url(../media/angled-blue-shape.png) top left/contain no-repeat;
       }
     }
-    .three-squares {
+    .two-squares {
       display: block;
       position: absolute;
-      width: 150px;
-      height: 150px;
+      width: 40px;
+      height: 80px;
       left: 1%;
       top: calc(100% - 135px);
       .square {
         display: block;
         position: relative;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background: $krewe-bright-green;
-        &.square-1 {
-          margin-left: 100px;
-        }
-        &.square-2 {
-          margin-left: 50px;
-        }
       }
     }
   }

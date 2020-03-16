@@ -2,6 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import useSiteMetaData from "./SiteMetadata"
 
+import "../scss/layout.scss";
+
 const Layout = ({ children }) => {
   const { title, description, image } = useSiteMetaData();
 
