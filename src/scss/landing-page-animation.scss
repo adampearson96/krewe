@@ -1,0 +1,160 @@
+@import "colours";
+
+.landing-page-animation {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: $krewe-white;
+  overflow: hidden;
+  // pointer-events: none;
+  .landing-page-animation-outer-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    .vertical-purple-squares {
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 100px;
+      left: 80%;
+      top: 5%;
+      .square {
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: $krewe-purple;
+      }
+    }
+    .horizontal-black-squares {
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      top: 8%;
+      left: 40%;
+      .square {
+        display: inline-block;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: $krewe-black;
+      }
+    }
+    .angled-black-shape {
+      display: block;
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      top: 27%;
+      left: 80%;
+      .shape {
+        display: block;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background: url(../media/angled-black-shape.png) top left/contain no-repeat;
+      }
+    }
+    .orange-square {
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 20%;
+      top: 42%;
+      background: $krewe-orange;
+    }
+    .horizontal-purple-squares {
+     display: block;
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     left: 66%;
+     top: 53%;
+     .square {
+       display: inline-block;
+       position: relative;
+       width: 50px;
+       height: 50px;
+       background: $krewe-purple;
+     }
+    }
+    .angled-blue-shape {
+      display: block;
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left: 53%;
+      top: 64%;
+      .shape {
+        display: block;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background: url(../media/angled-blue-shape.png) top left/contain no-repeat;
+      }
+    }
+    .three-squares {
+      display: block;
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left: 1%;
+      top: calc(100% - 135px);
+      .square {
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: $krewe-bright-green;
+        &.square-1 {
+          margin-left: 100px;
+        }
+        &.square-2 {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+  &.playing {
+    .landing-page-animation-outer-container {
+      .vertical-purple-squares {
+        left: calc(50% + 50px);
+        top: calc(50% - 75px);
+      }
+      .horizontal-black-squares {
+        left: calc(50% - 100px);
+        top: calc(50% - 75px);
+      }
+      .angled-black-shape {
+        left: calc(50% - 50px);
+        top: calc(50% - 75px);
+      }
+      .orange-square {
+        left: calc(50% - 100px);
+        top: calc(50% - 25px);
+      }
+      .horizontal-purple-squares {
+        left: calc(50% - 25px);
+        top: calc(50% + 25px);
+      }
+      .angled-blue-shape {
+        left: calc(50% - 50px);
+        top: calc(50% - 75px);
+      }
+      .three-squares {
+        left: calc(50% - 100px);
+        top: calc(50% - 75px);
+      }
+    }
+  }
+}
