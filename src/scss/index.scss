@@ -45,11 +45,16 @@
       .btn {
         display: inline-block;
         width: 132px;
-        color: $krewe-white;
+        color: $krewe-black;
         background-color: $krewe-orange;
         margin: $spacing-xs $spacing-s $spacing-xs 0;
+        opacity: 1;
         &:nth-child(2n) {
           margin-right: 0;
+        }
+        &:hover {
+          transition: 300ms all ease;
+          opacity: 0.8;
         }
       }
     }

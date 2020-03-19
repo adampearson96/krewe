@@ -1,0 +1,140 @@
+@import "global";
+
+header {
+  .outer-container {
+    .header-title {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: $spacing-s;
+      background: $krewe-white;
+      color: $krewe-black;
+      a {
+        text-decoration: none;
+        color: $krewe-orange;
+      }
+      p {
+        margin: 0;
+        text-transform: uppercase; 
+      }
+    }
+    nav.main-navigation {
+      button.mobile-toggle {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: $krewe-orange;
+        color: $krewe-black;
+        text-transform: uppercase;
+        padding: $spacing-s;
+        outline: none;
+        border: none;
+        margin: 0;
+        border-radius: 0;
+        z-index: 10;
+        p {
+          margin: 0;
+          display: inline-block;
+          font-size: 1rem;
+          line-height: 1.25;
+          vertical-align: middle;
+        }
+        .burger {
+          display: inline-block;
+          position: relative;
+          width: 30px;
+          height: 20px;
+          vertical-align: middle;
+          margin-left: $spacing-m;
+          span {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 1px;
+            background: $krewe-black;
+            &:nth-child(2) {
+              top: calc(50% - .5px);
+            }
+            &:nth-child(3) {
+              top: calc(100% - 1px);
+            }
+          }
+        }
+      }
+      .navigation-container {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform-origin: top left;
+        transform: rotate(-90deg);
+        background: $krewe-white;
+        z-index: 9;
+        transition: 300ms all ease;
+        .inner-container {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          a {
+            flex: 0 1 auto;
+            position: relative;
+            color: $krewe-black;
+            text-decoration: none;
+            font-size: 1.5rem;
+            line-height: 1.25;
+            margin-bottom: $spacing-s;
+            padding: 0 $spacing-xs;
+            &:before {
+              display: block;
+              position: absolute;
+              content: '';
+              left: 0;
+              top: 0;
+              bottom: 0;
+              width: 0px;
+              background: $krewe-orange;
+              z-index: -1;
+            }
+            &.active,
+            &:hover {
+              &:before {
+                width: 50px;
+                transition: 300ms all ease;
+                z-index: -1;
+              }
+            }
+            &.active {
+              &:hover {
+                &:before {
+                  background: $krewe-bright-green;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.active {
+        button.menu-toggle {
+
+        }
+        .navigation-container {
+          transform: rotate(0);
+          transition: 300ms all ease;
+        }
+      }
+    }
+  }
+}

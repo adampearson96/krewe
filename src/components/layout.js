@@ -1,5 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import Navbar from "../components/navbar"
 import useSiteMetaData from "./SiteMetadata"
 
 import "../scss/layout.scss";
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="twitter:card" content="summary_large_image" />
       </Helmet>
+      <Navbar />
       <main className="main-content">
         {children}
       </main>
