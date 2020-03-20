@@ -1,7 +1,24 @@
 @import "global";
 
 header {
+  @include devices(ipad) {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: $krewe-white;
+    z-index: 10;
+  }
   .outer-container {
+    @include devices(ipad) {
+      display: flex;
+      flex-flow: row nowrap;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+    }
     .header-title {
       display: block;
       position: fixed;
@@ -12,6 +29,15 @@ header {
       padding: $spacing-s;
       background: $krewe-white;
       color: $krewe-black;
+      z-index: 10;
+      @include devices(ipad) {
+        position: relative;
+        top: unset;
+        left: unset;
+        right: unset;
+        width: unset;
+        flex: 0 1 auto;
+      }
       a {
         text-decoration: none;
         color: $krewe-orange;
@@ -22,6 +48,10 @@ header {
       }
     }
     nav.main-navigation {
+      @include devices(ipad) {
+        flex: 0 1 auto;
+        padding: $spacing-s;
+      }
       button.mobile-toggle {
         display: block;
         position: fixed;
@@ -68,6 +98,9 @@ header {
             }
           }
         }
+        @include devices(ipad) {
+          display: none;
+        }
       }
       .navigation-container {
         display: block;
@@ -81,13 +114,27 @@ header {
         background: $krewe-white;
         z-index: 9;
         transition: 300ms all ease;
+        @include devices(ipad) {
+          position: relative;
+          top: unset;
+          left: unset;
+          right: unset;
+          bottom: unset;
+          transform-origin: unset;
+          transform: unset;
+          background: unset;
+          flex: 0 1 auto;
+        }
         .inner-container {
           display: flex;
-          flex-flow: column;
+          flex-flow: column nowrap;
           justify-content: center;
           align-items: center;
           width: 100%;
           height: 100%;
+          @include devices(ipad) {
+            flex-flow: row nowrap;
+          }
           a {
             flex: 0 1 auto;
             position: relative;
@@ -97,6 +144,11 @@ header {
             line-height: 1.25;
             margin-bottom: $spacing-s;
             padding: 0 $spacing-xs;
+            @include devices(ipad) {
+              margin-bottom: 0;
+              font-size: 1rem;
+              line-height: 1.25;
+            }
             &:before {
               display: block;
               position: absolute;
@@ -107,6 +159,7 @@ header {
               width: 0px;
               background: $krewe-orange;
               z-index: -1;
+              transition: 300ms all ease;
             }
             &.active,
             &:hover {
@@ -114,6 +167,9 @@ header {
                 width: 50px;
                 transition: 300ms all ease;
                 z-index: -1;
+                @include devices(ipad) {
+                  width: 30px;
+                }
               }
             }
             &.active {

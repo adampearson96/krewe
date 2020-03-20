@@ -14,15 +14,24 @@
     width: 100%;
     height: 100%;
     padding: $spacing-s;
+    @include devices(ipad) {
+      align-items: center;
+    }
     .logo {
       display: block;
       flex: 0 1 auto;
       width: 280px;
+      @include devices(ipad) {
+        width: 576px;
+      }
       img {
         display: block;
         width: 100%;
         height: auto;
         font-size: 0;
+        @include devices(ipad) {
+          width: 280px;
+        }
       }
     }
     .subtitle {
@@ -30,6 +39,9 @@
       flex: 0 1 auto;
       width: 280px;
       margin-top: $spacing-xxl;
+      @include devices(ipad) {
+        width: 576px;
+      }
       p {
         margin: 0;
         font-size: 1rem;
@@ -42,6 +54,9 @@
       flex: 0 1 auto;
       width: 280px;
       font-size: 0;
+      @include devices(ipad) {
+        width: 576px;
+      }
       .btn {
         display: inline-block;
         width: 132px;
@@ -51,6 +66,14 @@
         opacity: 1;
         &:nth-child(2n) {
           margin-right: 0;
+          @include devices(computer) {
+            margin-right: $spacing-s;
+          }
+        }
+        &:nth-child(4) {
+          @include devices(computer) {
+            margin-right: 0;
+          }
         }
         &:hover {
           transition: 300ms all ease;

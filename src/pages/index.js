@@ -22,7 +22,7 @@ export default () => {
               <p>Take me to……</p>
             </div>
             <div className="links">
-              <Link className="btn" to="/">About</Link>
+              <Link className="btn" to="/about">About</Link>
               <Link className="btn" to="/">Work</Link>
               <Link className="btn" to="/">Process</Link>
               <Link className="btn" to="/">Contact</Link>
