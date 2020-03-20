@@ -9,8 +9,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: $krewe-white;
-  color: $krewe-black;
+  background: $krewe-black;
+  color: $krewe-white;
 }
 main {
   padding: 49px 0 42px 0;
@@ -40,11 +40,7 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 0 $spacing-s $spacing-s $spacing-s;
-    @include devices(ipad) {
-      padding: 0 $spacing-m $spacing-m $spacing-m;
-      
-    }
+    background: $krewe-light-grey;
   }
   h1 {
     display: block;
@@ -54,13 +50,14 @@ main {
     text-transform: uppercase;
     letter-spacing: .1em;
     margin: 0;
-    background: $krewe-bright-green;
+    color: $krewe-black;
     font-size: 2rem;
     line-height: 1.5;
     padding: $spacing-xs;
     @include devices(ipad) {
       font-size: 3rem;
       line-height: 1.5;
+      padding: $spacing-xl;
     }
   }
 }

@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 
 import "../scss/about.scss"
 
@@ -82,7 +81,7 @@ export default ({ data }) => {
                 <h3>Scary Movies</h3>
               </div>
               <div className="col">
-                <Img fluid={data.image1.childImageSharp.fluid} />
+                <iframe src="https://giphy.com/embed/gjP5x1cENxayk" width="480" height="270" frameBorder="0" title="scary movies"></iframe>
               </div>
             </div>
             <div 
@@ -96,7 +95,7 @@ export default ({ data }) => {
                 <h3>DIY</h3>
               </div>
               <div className="col">
-                <Img fluid={data.image1.childImageSharp.fluid} />
+                <iframe src="https://giphy.com/embed/HXJUbsDk4kYKc" width="480" height="368" frameBorder="0" title="DIY"></iframe>
               </div>
             </div>
             <div 
@@ -110,7 +109,7 @@ export default ({ data }) => {
                 <h3>Chips &amp; Icecream!</h3>
               </div>
               <div className="col">
-                <Img fluid={data.image1.childImageSharp.fluid} />
+                <iframe src="https://giphy.com/embed/y3QOvy7xxMwKI" width="480" height="383" frameBorder="0" title="Chips &amp; Icecream!"></iframe>
               </div>
             </div>
             <div className="row heading">
@@ -129,6 +128,7 @@ export default ({ data }) => {
                   className="btn" 
                   rel="noopener noreferrer" 
                   target="_blank"
+                  href={data.file.publicURL}
                   download 
                   data-sal="slide-up"
                   data-sal-duration="600"
@@ -148,14 +148,8 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    image1: file(relativePath: { eq: "icon-512x512.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 1440, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+    file(extension: {eq: "pdf"}, name: {eq: "cv"}) {
+      publicURL
     }
   }
 `

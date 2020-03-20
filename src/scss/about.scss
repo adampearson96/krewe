@@ -1,117 +1,140 @@
 @import "global";
-
-.content-container {
-  display: block;
-  position: relative;
-  width: 100%;
-  .outer-container {
-    display: flex;
-    flex-flow: column nowrap;
-    padding: $spacing-s;
-    @include devices(ipad) {
-      padding: $spacing-m;
-    }
-    .row {
-      display: flex;
-      flex-flow: row nowrap;
-      flex: 0 0 auto;
-      margin-bottom: $spacing-xl;
-      .col {
-        display: block;
-        flex: 0 1 auto;
-        width: 100%;
-        @include devices(ipad) {
-          width: 50%;
-        }
-        h2 {
-          position: relative;
-          font-size: 1.5rem;
-          line-height: 1.25;
-          font-weight: 500;
-          margin: 0 0 $spacing-s 0;
-          text-transform: uppercase;
-          padding: 0 $spacing-xs;
-          &:before {
-            display: block;
-            position: absolute;
-            content: '';
-            left: 0;
-            top: 0;
-            bottom: 0;
-            height: 100%;
-            width: 50px;
-            background: $krewe-purple;
-            z-index: -1;
-          }
-        }
-        .content {
-          width: 90%;
-          margin: 0 0 0 auto;
-        }
+#page-about-page {
+  .page-title {
+    .outer-container {
+      width: 100%;
+      padding-top: 125%;
+      background: url(../media/about-us-background.jpg) center/cover no-repeat;
+      @include devices(computer) {
+        padding-top: 40%;
+        background: url(../media/about-us-background.jpg) top 20% center/cover no-repeat;
+        background-attachment: fixed;
       }
-      &:nth-child(2) {
-        justify-content: flex-end;
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $krewe-white;
+      }
+    }
+  }
+  .content-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    .outer-container {
+      display: flex;
+      flex-flow: column nowrap;
+      padding: $spacing-s;
+      @include devices(ipad) {
+        padding: $spacing-m;
+      }
+      .row {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 0 0 auto;
+        margin-bottom: $spacing-xl;
         .col {
+          display: block;
+          flex: 0 1 auto;
+          width: 100%;
+          @include devices(ipad) {
+            width: 50%;
+          }
           h2 {
-            text-align: right;
+            position: relative;
+            font-size: 1.5rem;
+            line-height: 1.25;
+            font-weight: 500;
+            margin: 0 0 $spacing-s 0;
+            text-transform: uppercase;
+            padding: 0 $spacing-xs;
             &:before {
-              left: unset;
-              right: 0;
+              display: block;
+              position: absolute;
+              content: '';
+              left: 0;
+              top: 0;
+              bottom: 0;
+              height: 100%;
+              width: 50px;
+              background: $krewe-purple;
+              z-index: -1;
             }
           }
-        }
-      }
-      &.heading {
-        .col {
-          width: 100%;
-          text-align: center;
-          h2 {
-            display: inline-block;
+          .content {
+            width: 90%;
+            margin: 0 0 0 auto;
           }
         }
-      }
-      &.image {
-        align-items: center;
-        .col {
-          h3 {
-            font-size: 1.25rem;
-            line-height: 1.5;
-            font-weight: 500;
-            text-transform: uppercase;
-            text-align: right;
-            margin: 0 $spacing-s 0 0;
-          }
-          img {
-            display: block;
-            width: 100%;
-            height: auto;
-            font-size: 0;
-          }
-        }
-        &.image-2 {
+        &:nth-child(2) {
+          justify-content: flex-end;
           .col {
-            order: 1;
-            &.title {
-              order: 2;
-              h3 {
-                text-align: left;
-                margin: 0 0 0 $spacing-s;
+            h2 {
+              text-align: right;
+              &:before {
+                left: unset;
+                right: 0;
               }
             }
           }
         }
-      }
-      &.button {
-        .col {
-          width: 100%;
-          text-align: center;
-          a.btn {
-            display: inline-block;
-            background: $krewe-orange;
-            color: $krewe-white;
+        &.heading {
+          .col {
+            width: 100%;
+            text-align: center;
+            h2 {
+              display: inline-block;
+            }
+          }
+        }
+        &.image {
+          align-items: center;
+          .col {
+            h3 {
+              font-size: 1.25rem;
+              line-height: 1.5;
+              font-weight: 500;
+              text-transform: uppercase;
+              text-align: right;
+              margin: 0 $spacing-s 0 0;
+            }
+            iframe {
+              width: 100%;
+              height: auto;
+            }
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          &.image-2 {
+            .col {
+              order: 1;
+              &.title {
+                order: 2;
+                h3 {
+                  text-align: left;
+                  margin: 0 0 0 $spacing-s;
+                }
+              }
+              text-align: right;
+            }
+          }
+        }
+        &.button {
+          .col {
+            width: 100%;
+            text-align: center;
+            a.btn {
+              display: inline-block;
+              background: $krewe-orange;
+              color: $krewe-white;
+            }
           }
         }
       }
     }
-  }
+  }  
 }

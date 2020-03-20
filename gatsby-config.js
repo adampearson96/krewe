@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-plugin-google-fonts`,

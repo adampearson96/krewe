@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import "../scss/landing-page-animation.scss"
 import "../scss/index.scss"
 
-import logoWhite from "../media/krewe-logo-black.svg";
+import logoWhite from "../media/krewe-logo-white.svg";
 
 export default () => {
   
