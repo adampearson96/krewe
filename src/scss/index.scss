@@ -1,83 +1,87 @@
 @import "global";
 
-.hero-section {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  .outer-container {
-    display: flex;
+.page-home-page {
+  header {
+    display: none;
+  }
+  .hero-section {
+    display: block;
     position: relative;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-end;
     width: 100%;
-    height: 100%;
-    padding: $spacing-s;
+    height: -ms-calc(100vh - 91px);
+    height: calc(100vh - 91px);
     @include devices(ipad) {
-      align-items: center;
+      height: -ms-calc(100vh - 50px);
+      height: calc(100vh - 50px);
     }
-    .logo {
-      display: block;
-      flex: 0 1 auto;
-      width: 280px;
+    .outer-container {
+      display: flex;
+      position: relative;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-end;
+      width: 100%;
+      height: 100%;
+      padding: $spacing-s;
       @include devices(ipad) {
-        width: 576px;
+        align-items: center;
       }
-      img {
+      .logo {
         display: block;
-        width: 100%;
-        height: auto;
-        font-size: 0;
+        flex: 0 1 auto;
+        width: 280px;
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          font-size: 0;
+        }
+      }
+      .subtitle {
+        display: block;
+        flex: 0 1 auto;
+        width: 280px;
+        margin: $spacing-xxl 0 $spacing-s 0;
         @include devices(ipad) {
-          width: 280px;
+          width: 576px;
+          margin-left: 296px;
+        }
+        p {
+          margin: 0;
+          font-size: 1.25rem;
+          line-height: 1;
+          font-weight: 700;
         }
       }
-    }
-    .subtitle {
-      display: block;
-      flex: 0 1 auto;
-      width: 280px;
-      margin-top: $spacing-xxl;
-      @include devices(ipad) {
-        width: 576px;
-      }
-      p {
-        margin: 0;
-        font-size: 1rem;
-        line-height: 1;
-        text-transform: uppercase;
-      }
-    }
-    .links {
-      display: block;
-      flex: 0 1 auto;
-      width: 280px;
-      font-size: 0;
-      @include devices(ipad) {
-        width: 576px;
-      }
-      .btn {
-        display: inline-block;
-        width: 132px;
-        color: $krewe-black;
-        background-color: $krewe-orange;
-        margin: $spacing-xs $spacing-s $spacing-xs 0;
-        opacity: 1;
-        &:nth-child(2n) {
-          margin-right: 0;
-          @include devices(computer) {
-            margin-right: $spacing-s;
-          }
+      .links {
+        display: block;
+        flex: 0 1 auto;
+        width: 280px;
+        font-size: 0;
+        @include devices(computer) {
+          width: 576px;
+          margin-left: 296px;
         }
-        &:nth-child(4) {
-          @include devices(computer) {
+        .btn {
+          display: inline-block;
+          width: 132px;
+          margin: $spacing-xs $spacing-s $spacing-xs 0;
+          opacity: 0;
+          &:nth-child(2n) {
             margin-right: 0;
+            @include devices(computer) {
+              margin-right: $spacing-s;
+            }
           }
-        }
-        &:hover {
-          transition: 300ms all ease;
-          opacity: 0.8;
+          &:nth-child(4) {
+            @include devices(computer) {
+              margin-right: 0;
+            }
+          }
+          &:hover {
+            transition: 300ms all ease;
+            opacity: 0.8;
+          }
         }
       }
     }

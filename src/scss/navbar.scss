@@ -8,7 +8,7 @@ header {
     left: 0;
     right: 0;
     width: 100%;
-    background: $krewe-white;
+    background: rgba(255, 255, 255, .95);
     z-index: 10;
   }
   .outer-container {
@@ -27,7 +27,7 @@ header {
       right: 0;
       width: 100%;
       padding: $spacing-s;
-      background: $krewe-white;
+      background: rgba(255, 255, 255, .95);
       color: $krewe-black;
       z-index: 10;
       @include devices(ipad) {
@@ -40,7 +40,6 @@ header {
       }
       a {
         text-decoration: none;
-        color: $krewe-orange;
       }
       p {
         margin: 0;
@@ -59,8 +58,8 @@ header {
         left: 0;
         right: 0;
         width: 100%;
-        background: $krewe-orange;
-        color: $krewe-black;
+        background: $new-dark-purple;
+        color: $krewe-white;
         text-transform: uppercase;
         padding: $spacing-s;
         outline: none;
@@ -89,7 +88,8 @@ header {
             left: 0;
             width: 30px;
             height: 1px;
-            background: $krewe-black;
+            background: $krewe-white;
+            transition: 300ms all ease;
             &:nth-child(2) {
               top: calc(50% - .5px);
             }
@@ -111,7 +111,7 @@ header {
         bottom: 0;
         transform-origin: top left;
         transform: rotate(-90deg);
-        background: $krewe-white;
+        background: $new-dark-purple;
         z-index: 9;
         transition: 300ms all ease;
         @include devices(ipad) {
@@ -138,7 +138,7 @@ header {
           a {
             flex: 0 1 auto;
             position: relative;
-            color: $krewe-black;
+            color: $krewe-white;
             text-decoration: none;
             font-size: 1.5rem;
             line-height: 1.25;
@@ -148,6 +148,7 @@ header {
               margin-bottom: 0;
               font-size: 1rem;
               line-height: 1.25;
+              color: $krewe-white;
             }
             &:before {
               display: block;
@@ -157,9 +158,12 @@ header {
               top: 0;
               bottom: 0;
               width: 0px;
-              background: $krewe-orange;
+              background: $new-pale-purple;
               z-index: -1;
               transition: 300ms all ease;
+              @include devices(ipad) {
+                background: $krewe-dark-grey;
+              }
             }
             &.active,
             &:hover {
@@ -175,7 +179,7 @@ header {
             &.active {
               &:hover {
                 &:before {
-                  background: $krewe-bright-green;
+                  background: $new-blue;
                 }
               }
             }
@@ -183,8 +187,23 @@ header {
         }
       }
       &.active {
-        button.menu-toggle {
-
+        button.mobile-toggle {
+          .burger {
+            span {
+              transition: 300ms all ease;
+              &:first-child {
+              transform: rotate(-45deg);
+              top: -ms-calc(50% - .5px);
+              top: calc(50% - .5px);
+              }
+              &:nth-child(2) {
+                transform: rotate(45deg);
+              }
+              &:nth-child(3) {
+                width: 0px;
+              }
+            }
+          }
         }
         .navigation-container {
           transform: rotate(0);

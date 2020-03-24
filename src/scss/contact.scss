@@ -1,0 +1,81 @@
+@import "global";
+
+#page-contact-page {
+  .page-title {
+    .outer-container {
+
+    }
+  }
+  .content-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    .outer-container {
+      display: flex;
+      flex-flow: column nowrap;
+      @include devices(computer) {
+       flex-flow: row wrap;   
+      }
+      .col-one {
+        display: block;
+        position: relative;
+        flex: 0 1 auto;
+        padding: $spacing-s;
+        @include devices(computer) {
+          width: 50%;
+          padding: $spacing-l;
+        }
+      }
+      .col-two {
+        display: block;
+        position: relative;
+        flex: 0 1 auto;
+        padding: $spacing-s;
+        @include devices(computer) {
+          width: 50%;
+          padding: $spacing-l;
+        }
+        h2 {
+          display: block;
+          text-align: center;
+        }
+        form {
+          display: block;
+          position: relative;
+          width: 100%;
+          label {
+            display: block;
+            width: 100%;
+            font-size: 0;
+            input,
+            textarea {
+              display: block;
+              width: 100%;
+              font-size: 1rem;
+              line-height: 1.25;
+              margin: 0 0 $spacing-s 0;
+            }
+          }
+          button[type="submit"] {
+            background: $krewe-orange;
+            color: $krewe-black;
+            border: none;
+            outline: none;
+            width: 100%;
+            @include devices(computer) {
+              width: auto;
+            }
+          }
+        }
+      }
+      .col-three {
+        flex: 0 1 auto;
+        padding: $spacing-s;
+        @include devices(computer) {
+          width: 50%;
+          padding: $spacing-l;
+        }
+      }
+    }
+  }
+}

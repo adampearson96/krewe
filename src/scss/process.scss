@@ -1,0 +1,27 @@
+@import "global";
+
+#page-process-page {
+  .page-title {
+    .outer-container {
+      h1 {
+
+      }
+    }
+  }
+  .page-content {
+    .outer-container {
+      .row-one {
+
+      }
+      .row-two {
+
+      }
+      .row-three {
+        .btn {
+          background: $krewe-orange;
+          color: $krewe-black;
+        }
+      }
+    }
+  }
+}

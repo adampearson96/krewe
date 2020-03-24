@@ -9,13 +9,20 @@
 body {
   margin: 0;
   padding: 0;
-  background: $krewe-black;
-  color: $krewe-white;
+  color: $krewe-black;
 }
 main {
   padding: 49px 0 42px 0;
   @include devices(ipad) {
     padding: 50px 0 0 0;
+  }
+}
+a {
+  color: $new-dark-purple;
+  transition: 300ms all ease;
+  &:hover {
+    color: $new-pale-purple;
+    transition: 300ms all ease;
   }
 }
 .outer-container {
@@ -30,17 +37,19 @@ main {
   padding: 0 $spacing-m;
   text-decoration: none;
   text-align: center;
+  color: $krewe-white;
+  background-color: $new-dark-purple;
 }
 .page-title {
   display: block;
   position: relative;
   width: 100%;
+  background: $krewe-light-grey;
   .outer-container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background: $krewe-light-grey;
   }
   h1 {
     display: block;
@@ -59,5 +68,47 @@ main {
       line-height: 1.5;
       padding: $spacing-xl;
     }
+  }
+}
+
+.logo-large {
+  display: inline-block;
+  position: relative;
+  width: 280px;
+  .rectangle {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 75px;
+    border: 2px solid $new-dark-purple;
+    z-index: 0;
+    pointer-events: none;
+  }
+  span {
+    display: block;
+    position: relative;
+    &.title {
+      font-size: 4rem;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: -.025em;
+      z-index: 1;
+      margin-left: $spacing-xs;
+      margin-top: .5rem;
+    }
+    &.sub-title {
+      font-size: 1rem;
+      line-height: 1;
+      margin-top: $spacing-xs;
+    }
+  }
+}
+
+// OVERRIDE TWEEN
+body:not(.page-home-page) {
+  header {
+    opacity: 1!important;
   }
 }

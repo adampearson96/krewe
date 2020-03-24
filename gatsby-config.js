@@ -19,6 +19,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-scroll-reveal`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -27,13 +28,6 @@ module.exports = {
         ],
         display: 'swap'
       }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `media`,
-        path: path.join(__dirname, `src`, `media`),
-      },
     },
     {
       resolve: `gatsby-plugin-scroll-reveal`,
@@ -50,6 +44,20 @@ module.exports = {
           enterEventName: 'sal:in', // Enter event name
           exitEventName: 'sal:out', // Exit event name
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `media`,
+        path: path.join(__dirname, `src`, `media`),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `processes`,
+        path: path.join(__dirname, `src`, `processes`),
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,

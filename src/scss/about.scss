@@ -1,14 +1,15 @@
 @import "global";
 #page-about-page {
   .page-title {
+    background: url(../media/about-us-background.jpg) center/cover no-repeat;
+    @include devices(computer) {
+      background: url(../media/about-us-background.jpg) top 20% center/cover no-repeat;
+    }
     .outer-container {
       width: 100%;
       padding-top: 125%;
-      background: url(../media/about-us-background.jpg) center/cover no-repeat;
       @include devices(computer) {
         padding-top: 40%;
-        background: url(../media/about-us-background.jpg) top 20% center/cover no-repeat;
-        background-attachment: fixed;
       }
       h1 {
         position: absolute;
