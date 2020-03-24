@@ -16,11 +16,11 @@ const ProcessTemplate = ({ data }) => {
           <div className="outer-container">
             <div className="row-one">
               <div className="col-one">
-                <h2>{data.markdownRemark.frontmatter.row1title}</h2>
-                <p>{data.markdownRemark.frontmatter.row1content}</p>
+                <h2></h2>
+                <p></p>
               </div>
               <div className="col-two">
-                {data.markdownRemark.frontmatter.row1image}
+                
               </div>
             </div>
             <div className="row-two">
@@ -56,14 +56,13 @@ const ProcessTemplate = ({ data }) => {
 
 export default ProcessTemplate
 
-// export const pageQuery = graphql`
-//   query($slug: String!) {
-//     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-//       frontmatter {
-//         date(formatString: "MMMM DD, YYYY")
-//         path
-//         title
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`
