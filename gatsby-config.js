@@ -17,9 +17,9 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-scroll-reveal`,
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -49,14 +49,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `media`,
-        path: path.join(__dirname, `src`, `media`),
+        path: `${__dirname}/src/media/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `processes`,
-        path: path.join(__dirname, `src`, `processes`),
+        path: `${__dirname}/src/processes/`,
       },
     },
     {

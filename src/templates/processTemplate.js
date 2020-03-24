@@ -56,14 +56,14 @@ const ProcessTemplate = ({ data }) => {
 
 export default ProcessTemplate
 
-export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
-        title
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query($slug: String!) {
+//     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+//       frontmatter {
+//         date(formatString: "MMMM DD, YYYY")
+//         path
+//         title
+//       }
+//     }
+//   }
+// `

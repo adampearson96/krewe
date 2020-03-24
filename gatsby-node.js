@@ -8,7 +8,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: `/process${slug}`,
+      value: `process${slug}`,
     })
   }
 }
@@ -20,8 +20,8 @@ exports.createPages = async ({ graphql, actions }) => {
       allMarkdownRemark {
         edges {
           node {
-            frontmatter {
-              path
+            fields {
+              slug
             }
           }
         }
@@ -31,12 +31,12 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.path,
+      path: node.fields.slug,
       component: path.resolve(`./src/templates/processTemplate.js`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
-        slug: node.frontmatter.path,
+        slug: node.fields.slug,
       },
     })
   })
