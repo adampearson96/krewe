@@ -2,9 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import BodyClassName from 'react-body-classname';
 import Logo from "../components/logo"
-import { Link } from "gatsby"
+import Button from '@material-ui/core/Button';
 import { Tween, Timeline } from "react-gsap"
-
 import "../scss/index.scss"
 
 export default () => {
@@ -40,10 +39,18 @@ export default () => {
                   <div className="links" />
                 }
               >
-                <Link className="btn" to="/about">About</Link>
-                <Link className="btn" to="/work">Work</Link>
-                <Link className="btn" to="/process">Process</Link>
-                <Link className="btn" to="/contact">Contact</Link>
+                <Button variant="contained" color="primary" href="/about">
+                  About
+                </Button>
+                <Button variant="contained" color="primary" href="/work">
+                  Work
+                </Button>
+                <Button variant="contained" color="primary" href="/process">
+                  Process
+                </Button>
+                <Button variant="contained" color="primary" href="/contact">
+                  Contact
+                </Button>
               </Tween>
             </Timeline>
           </div>

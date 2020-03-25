@@ -1,8 +1,6 @@
 import React from "react"
 import { Tween, Timeline } from "react-gsap"
 
-import "../scss/logo.scss"
-
 export default () => {
   return (
     <Timeline
@@ -16,7 +14,7 @@ export default () => {
           fill: "none"
         }}
         staggerTo={{
-          fill: "#6474e5"
+          fill: "#c31fad"
         }}
         stagger={0.1}
         duration={2}
@@ -35,7 +33,7 @@ export default () => {
         to={{ opacity: 1 }}
         duration={1}
       >
-        <rect x="1" y="1" width="152" height="76" fill="#FFF" stroke="#6474e5" strokeWidth="2px" />
+        <rect x="1" y="1" width="152" height="76" fill="#FFF" stroke="#c31fad" strokeWidth="2px" />
       </Tween>
       <Tween
         from={{ opacity: 0}}

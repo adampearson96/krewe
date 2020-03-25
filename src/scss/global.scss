@@ -18,10 +18,10 @@ main {
   }
 }
 a {
-  color: $new-dark-purple;
+  color: $krewe-purple;
   transition: 300ms all ease;
   &:hover {
-    color: $new-pale-purple;
+    opacity: .8;
     transition: 300ms all ease;
   }
 }
@@ -38,7 +38,7 @@ a {
   text-decoration: none;
   text-align: center;
   color: $krewe-white;
-  background-color: $new-dark-purple;
+  background-color: $krewe-purple;
 }
 .page-title {
   display: block;
