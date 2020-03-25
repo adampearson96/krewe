@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import Button from '@material-ui/core/Button'
 
 import "../scss/about.scss"
 
@@ -124,19 +125,19 @@ export default ({ data }) => {
             </div>
             <div className="row button">
               <div className="col">
-                <a 
-                  className="btn" 
-                  rel="noopener noreferrer" 
-                  target="_blank"
-                  href={data.file.publicURL}
-                  download 
-                  data-sal="slide-up"
-                  data-sal-duration="600"
-                  data-sal-delay="600"
-                  data-sal-easing="easeOutQuart"
-                >
-                  CV
-                </a>
+              <Button 
+                variant="contained" 
+                color="primary" 
+                href={data.file.publicURL}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-sal="slide-up"
+                data-sal-duration="600"
+                data-sal-delay="600"
+                data-sal-easing="easeOutQuart"
+              >
+                View CV
+              </Button>
               </div>
             </div>
           </div>

@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import BodyClassName from 'react-body-classname';
+import BodyClassName from 'react-body-classname'
 import Logo from "../components/logo"
-import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button'
 import { Tween, Timeline } from "react-gsap"
 import "../scss/index.scss"
 

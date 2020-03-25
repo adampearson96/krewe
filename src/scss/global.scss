@@ -71,44 +71,14 @@ a {
   }
 }
 
-.logo-large {
-  display: inline-block;
-  position: relative;
-  width: 280px;
-  .rectangle {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 140px;
-    height: 75px;
-    border: 2px solid $new-dark-purple;
-    z-index: 0;
-    pointer-events: none;
-  }
-  span {
-    display: block;
-    position: relative;
-    &.title {
-      font-size: 4rem;
-      line-height: 1;
-      font-weight: 700;
-      letter-spacing: -.025em;
-      z-index: 1;
-      margin-left: $spacing-xs;
-      margin-top: .5rem;
-    }
-    &.sub-title {
-      font-size: 1rem;
-      line-height: 1;
-      margin-top: $spacing-xs;
-    }
-  }
-}
-
 // OVERRIDE TWEEN
 body:not(.page-home-page) {
   header {
     opacity: 1!important;
   }
+}
+
+// OVERRIDE BUTTONS STYLING
+a.MuiButton-root {
+  border-radius: 0;
 }

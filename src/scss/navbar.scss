@@ -58,7 +58,7 @@ header {
         left: 0;
         right: 0;
         width: 100%;
-        background: $new-dark-purple;
+        background: $krewe-purple;
         color: $krewe-white;
         text-transform: uppercase;
         padding: $spacing-s;
@@ -111,7 +111,7 @@ header {
         bottom: 0;
         transform-origin: top left;
         transform: rotate(-90deg);
-        background: $new-dark-purple;
+        background: $krewe-purple;
         z-index: 9;
         transition: 300ms all ease;
         @include devices(ipad) {
