@@ -10,14 +10,32 @@ export default () => {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.87 94.44" id="logo" />
       }
     >
-      {/* Rectangle */}
-      <Tween
-        from={{ svgDraw: 0}}
-        to={{ svgDraw: 1}}
+
+      <Tween 
+        staggerFrom={{
+          fill: "none"
+        }}
+        staggerTo={{
+          fill: "#6474e5"
+        }}
+        stagger={0.1}
         duration={2}
-        ease="easeOutCubic"
       >
-        <rect className="rectangle" x="1" y="1" width="138" height="73" fill="none" strokeWidth="2" />
+        <rect x="0" y="38" width="38" height="38"/>
+        <rect x="0" y="0" width="38" height="38"/>
+        <rect x="38" y="38" width="38" height="38"/>
+        <rect x="38" y="0" width="38" height="38"/>
+        <rect x="76" y="38" width="38" height="38"/>
+        <rect x="76" y="0" width="38" height="38"/>
+        <rect x="114" y="38" width="38" height="38"/>
+        <rect x="114" y="0" width="38" height="38"/>
+      </Tween>
+      <Tween
+        from={{ opacity: 0 }}
+        to={{ opacity: 1 }}
+        duration={1}
+      >
+        <rect x="1" y="1" width="152" height="76" fill="#FFF" stroke="#6474e5" strokeWidth="2px" />
       </Tween>
       <Tween
         from={{ opacity: 0}}
@@ -36,6 +54,7 @@ export default () => {
         from={{ opacity: 0}}
         to={{ opacity: 1}}
         duration={1}
+        delay={-.5}
       >
         {/* Emma Marsh - Freelance */}
         <path className="subtitle" d="M8.72,89.84H3.53V94H9.28l-.13,1.21h-7V83.57H9l-.1,1.2H3.53v3.87H8.72Z" transform="translate(-1 -1)"/>

@@ -17,50 +17,35 @@ export default () => {
             <div className="logo logo-large">
               <Logo />
             </div>
-            <Tween
-              from={{ opacity: 0 }}
-              to={{ opacity: 1 }}
-              duration={1}
-              delay={4}
-            >
-              <div className="subtitle">
-                <p>Take me to……</p>
-              </div>
-            </Tween>
-            <div className="links">
+            <Timeline delay={4.5}>
               <Tween
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
-                duration={.5}
-                delay={5}
+                duration={1}
+              >
+                <div className="subtitle">
+                  <p>Take me to…</p>
+                </div>
+              </Tween>
+              <Tween
+                staggerFrom={{
+                  opacity: 0
+                }}
+                staggerTo={{
+                  opacity: 1
+                }}
+                stagger={0.15}
+                duration={1}
+                wrapper={
+                  <div className="links" />
+                }
               >
                 <Link className="btn" to="/about">About</Link>
-              </Tween>
-              <Tween
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}
-                duration={.5}
-                delay={5.25}
-              >
                 <Link className="btn" to="/work">Work</Link>
-              </Tween>
-              <Tween
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}
-                duration={.5}
-                delay={5.5}
-              >
                 <Link className="btn" to="/process">Process</Link>
-              </Tween>
-              <Tween
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}
-                duration={.5}
-                delay={5.75}
-              >
                 <Link className="btn" to="/contact">Contact</Link>
               </Tween>
-            </div>
+            </Timeline>
           </div>
         </section>
       </BodyClassName>
