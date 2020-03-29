@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const ProcessTemplate = ({ data }) => {
 
   return (
-    <Layout>
+    <Layout path="Process">
       <div id="page-individual-process-page">
         <div className="page-title">
           <div className="outer-container">
@@ -16,7 +16,7 @@ const ProcessTemplate = ({ data }) => {
           <div className="outer-container">
             <div className="row-one">
               <div className="col-one">
-                <h2></h2>
+                <h2>Test</h2>
                 <p></p>
               </div>
               <div className="col-two">

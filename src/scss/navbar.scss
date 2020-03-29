@@ -111,7 +111,7 @@ header {
         bottom: 0;
         transform-origin: top left;
         transform: rotate(-90deg);
-        background: $krewe-purple;
+        background: $krewe-white;
         z-index: 9;
         transition: 300ms all ease;
         @include devices(ipad) {
@@ -138,41 +138,37 @@ header {
           a {
             flex: 0 1 auto;
             position: relative;
-            color: $krewe-white;
+            color: $krewe-black;
             text-decoration: none;
             font-size: 1.5rem;
             line-height: 1.25;
             margin-bottom: $spacing-s;
-            padding: 0 $spacing-xs;
             @include devices(ipad) {
               margin-bottom: 0;
+              margin-left: $spacing-s;
               font-size: 1rem;
               line-height: 1.25;
-              color: $krewe-white;
             }
             &:before {
               display: block;
               position: absolute;
               content: '';
               left: 0;
-              top: 0;
               bottom: 0;
-              width: 0px;
-              background: $new-pale-purple;
+              width: 0%;
+              height: 2px;
+              background: $krewe-purple;
               z-index: -1;
               transition: 300ms all ease;
-              @include devices(ipad) {
-                background: $krewe-dark-grey;
-              }
             }
             &.active,
             &:hover {
               &:before {
-                width: 50px;
+                width: 30px;
                 transition: 300ms all ease;
                 z-index: -1;
                 @include devices(ipad) {
-                  width: 30px;
+                  width: 100%;
                 }
               }
             }

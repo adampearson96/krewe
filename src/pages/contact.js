@@ -5,7 +5,7 @@ import "../scss/contact.scss"
 
 export default () => {
   return (
-    <Layout>
+    <Layout path="Contact">
       <div id="page-contact-page">
         <div className="page-title">
           <div className="outer-container">
@@ -37,9 +37,9 @@ export default () => {
               </form>
             </div>
             <div className="col-three">
-              <a>Email address</a>
-              <a>Phone number</a>
-              <a>LinkedIn</a>
+              <a href="mailto:" target="_blank" rel="noopener noreferrer">Email address</a>
+              <a href="tel:" target="_blank" rel="noopener noreferrer">Phone number</a>
+              <a href="#linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
           </div>
         </div>
