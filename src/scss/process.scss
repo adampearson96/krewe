@@ -9,17 +9,149 @@
     }
   }
   .page-content {
-    .outer-container {
-      .row-one {
-
+    .row-one {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: $spacing-s;
+      @include devices(ipad) {
+        padding: $spacing-xl;
       }
-      .row-two {
-
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        .col {
+          display: block;
+          flex: 0 1 auto;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+        }
       }
-      .row-three {
-        .btn {
-          background: $krewe-orange;
-          color: $krewe-black;
+    }
+    .row-two {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: $spacing-s;
+      @include devices(ipad) {
+        padding: $spacing-xl;
+      }
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        .col {
+          display: block;
+          flex: 0 1 auto;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          .diagram {
+            display: block;
+            position: relative;
+            width: 100%;
+            .mobile {
+              display: block;
+              position: realtive;
+              width: 100%;
+              font-size: 0;
+              @include devices(ipad) {
+                display: none;
+              }
+              .btn {
+                width: calc(47.5vw - 3.3em);
+              }
+              .arrow {
+                display: inline-block;
+                position: relative;
+                width: 5vw;
+                text-align: center;
+                font-size: 1rem;
+                svg {
+                  width: 100%;
+                }
+                &#arrow-1 {
+                  margin: 0 1em;
+                }
+                &#arrow-2 {
+                  display: block;
+                  position: relative;
+                  margin: 1em 14vw 1em auto;
+                  svg {
+                    width: 8px;
+                    height: 16px;
+                  }
+                }
+                &#arrow-3 {
+                  margin: 0 1em;
+                }
+                &#arrow-4 {
+                  display: block;
+                  position: relative;
+                  margin: 1em auto 1em 14vw;
+                  svg {
+                    width: 8px;
+                    height: 16px;
+                  }
+                }
+                &#arrow-5 {
+                  margin: 0 1em;
+                }
+                &#arrow-6 {
+                  display: block;
+                  position: relative;
+                  margin: 1em 14vw 1em auto;
+                  svg {
+                    width: 8px;
+                    height: 16px;
+                  }
+                }
+                &#arrow-7 {
+                  margin: 0 1em;
+                }
+              }
+            }
+            .desktop {
+              display: none;
+              @include devices(ipad) {
+                display: block;
+                position: relative;
+                width: 100%;
+                max-width: 1000px;
+                margin: 0 auto;
+                .cls-1 {
+                  fill: #c31fad;
+                }
+                .cls-2 {
+                  fill:#fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .row-three {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: $spacing-s;
+      @include devices(ipad) {
+        padding: $spacing-xl;
+      }
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        .col {
+          display: block;
+          flex: 0 1 auto;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
         }
       }
     }
