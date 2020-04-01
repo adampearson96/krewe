@@ -20,7 +20,7 @@ export default () => {
             </div>
             <div className="col-two">
               <h2>Get in touch</h2>
-              <form action="POST" data-netlify="true">
+              {/* <form action="POST" data-netlify="true">
                 <label>
                   Name
                   <input type="text" name="name" placeholder="name" />
@@ -34,6 +34,26 @@ export default () => {
                   <textarea col="8" rows="4" name="project requirements" placeholder="Project Requirements" />
                 </label>
                 <button className="btn" type="submit">Send</button>
+              </form> */}
+              <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label>Your Name: <input type="text" name="name" /></label>   
+                </p>
+                <p>
+                  <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                  <label>Your Role: <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                  </select></label>
+                </p>
+                <p>
+                  <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
               </form>
             </div>
             <div className="col-three">
