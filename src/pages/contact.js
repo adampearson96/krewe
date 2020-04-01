@@ -21,7 +21,14 @@ export default () => {
             </div>
             <div className="col-two">
               <h2>Get in touch</h2>
-              {/* <form name="contact" method="POST" data-netlify="true">
+              <form
+                name="contact"
+                method="post"
+                action="/success"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+              >
+                <input type="hidden" name="bot-field" />
                 <label>
                   Name
                   <input type="text" name="name" placeholder="Name" />
@@ -35,31 +42,6 @@ export default () => {
                   <textarea col="8" rows="4" name="project requirements" placeholder="Project Requirements" />
                 </label>
                 <button className="btn" type="submit">Send</button>
-              </form> */}
-              <form
-                name="contact"
-                method="post"
-                action="/success"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-              >
-                <input type="hidden" name="bot-field" />
-                <div>
-                  <label htmlFor="name">Name</label>
-                  <input type="text" name="name" id="name" />
-                </div>
-                <div>
-                  <label htmlFor="email">Email</label>
-                  <input type="text" name="email" id="email" />
-                </div>
-                <div>
-                  <label htmlFor="message">Message</label>
-                  <textarea name="message" id="message" rows="6" required />
-                </div>
-                <div>
-                  <input type="submit" value="Drop a line" />
-                  <input type="reset" value="Eraser" />
-                </div>
               </form>
             </div>
             <div className="col-three">
