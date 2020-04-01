@@ -35,13 +35,7 @@ export default () => {
           </div>
           <div className="row-two">
             <div className="outer-container">
-              <div 
-                className="col"
-                data-sal="slide-up"
-                data-sal-duration="300"
-                data-sal-delay="600"
-                data-sal-easing="easeOutQuart"
-              >
+              <div className="col">
                 <div className="diagram">
                   <div className="mobile">
                     <Button id="link-research" className="btn" variant="contained" color="primary" href="/process/research">
