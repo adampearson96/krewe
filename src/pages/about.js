@@ -6,9 +6,10 @@ import { Tween } from "react-gsap"
 import Button from '@material-ui/core/Button'
 
 
-import scary from "../media/scary.webp"
+import scary from "../media/scary.gif"
 import diy from "../media/diy.gif"
-import icecream from "../media/icecream.webp"
+import icecream from "../media/icecream.gif"
+import processDiagram from "../media/process-diagram.svg"
 import "../scss/about.scss"
 
 export default ({ data }) => {
@@ -27,13 +28,7 @@ export default ({ data }) => {
               <div className="outer-container">
 
                 <div className="col">
-                  <div 
-                    className="content"
-                    data-sal="slide-up"
-                    data-sal-duration="300"
-                    data-sal-delay="600"
-                    data-sal-easing="easeOutQuart"
-                  >
+                  <div className="content">
                     <h2>Hi there, welcome to <span>KREWE</span>.</h2>
                     <p>
                       Who is KREWE you may ask?
@@ -45,13 +40,7 @@ export default ({ data }) => {
                   </div>
                 </div>
                 <div className="col">
-                  <div 
-                    className="rectangle"
-                    data-sal="slide-up"
-                    data-sal-duration="300"
-                    data-sal-delay="600"
-                    data-sal-easing="easeOutQuart"
-                  >
+                  <div className="rectangle">
                     <Tween 
                       wrapper={
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 76" id="rectangle" />
@@ -81,7 +70,6 @@ export default ({ data }) => {
             </div>
             <div className="row">
               <div className="outer-container">
-                
                 <div className="col">
                   <div 
                     className="icon"
@@ -90,21 +78,7 @@ export default ({ data }) => {
                     data-sal-delay="600"
                     data-sal-easing="easeOutQuart"
                   >
-
-                    <Tween
-                      wrapper={
-                        <svg className="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" fill="#c31fad" />
-                      }
-                      from={{
-                        svgDraw: 0,
-                      }}
-                      to={{
-                        svgDraw: 1,
-                      }}
-                      duration={2}
-                    >
-                      <path d="M22 11V3h-7v3H9V3H2v8h7V8h2v10h4v3h7v-8h-7v3h-2V8h2v3h7zM7 9H4V5h3v4zm10 6h3v4h-3v-4zm0-10h3v4h-3V5z" />
-                    </Tween>
+                    <img src={processDiagram} alt="" />
                   </div>
                 </div>
                 <div className="col">
