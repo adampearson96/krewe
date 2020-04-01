@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
 import "../scss/contact.scss"
 
@@ -20,10 +21,10 @@ export default () => {
             </div>
             <div className="col-two">
               <h2>Get in touch</h2>
-              {/* <form action="POST" data-netlify="true">
+              <form name="contact" method="POST" data-netlify="true">
                 <label>
                   Name
-                  <input type="text" name="name" placeholder="name" />
+                  <input type="text" name="name" placeholder="Name" />
                 </label>
                 <label>
                   Name
@@ -34,32 +35,21 @@ export default () => {
                   <textarea col="8" rows="4" name="project requirements" placeholder="Project Requirements" />
                 </label>
                 <button className="btn" type="submit">Send</button>
-              </form> */}
-              <form name="contact" method="POST" data-netlify="true">
-                <p>
-                  <label>Your Name: <input type="text" name="name" /></label>   
-                </p>
-                <p>
-                  <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                  <label>Your Role: <select name="role[]" multiple>
-                    <option value="leader">Leader</option>
-                    <option value="follower">Follower</option>
-                  </select></label>
-                </p>
-                <p>
-                  <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                  <button type="submit">Send</button>
-                </p>
               </form>
             </div>
             <div className="col-three">
-              <a href="mailto:" target="_blank" rel="noopener noreferrer">Email address</a>
-              <a href="tel:" target="_blank" rel="noopener noreferrer">Phone number</a>
-              <a href="#linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <div className="link">
+                Email Address: <a href="mailto:emmalmarsh17@gmail.com" target="_blank" rel="noopener noreferrer">emmalmarsh17@gmail.com</a>
+              </div>
+              <div className="link">
+                Phone Number: <a href="tel:07956639816" target="_blank" rel="noopener noreferrer">07956 639816</a>
+              </div>
+              <div className="link">
+                <a href="https://www.linkedin.com/in/emma-marsh-94a91142/" target="_blank" rel="noopener noreferrer" className="linkedIn">
+                  LinkedIn
+                  <LinkedInIcon />
+                </a>
+              </div>
             </div>
           </div>
         </div>

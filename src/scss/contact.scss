@@ -37,7 +37,7 @@
         }
         h2 {
           display: block;
-          text-align: center;
+          text-align: left;
         }
         form {
           display: block;
@@ -54,11 +54,11 @@
               font-size: 1rem;
               line-height: 1.25;
               margin: 0 0 $spacing-s 0;
+              padding: $spacing-xs;
+              border: 1px solid $krewe-dark-grey;
             }
           }
           button[type="submit"] {
-            background: $krewe-orange;
-            color: $krewe-black;
             border: none;
             outline: none;
             width: 100%;
@@ -74,6 +74,19 @@
         @include devices(computer) {
           width: 50%;
           padding: $spacing-l;
+        }
+        .link {
+          display: block;
+          margin-bottom: $spacing-s;
+          a {
+            &.linkedIn {
+              font-size: 0; 
+              svg {
+                width: 2.5rem;
+                height: 2.5rem;
+              }
+            }
+          }
         }
       }
     }
