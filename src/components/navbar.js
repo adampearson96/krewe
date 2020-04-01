@@ -11,6 +11,7 @@ class Navbar extends React.Component {
       active: false,
       navbarActiveClass: ""
     }
+  
   }
 
   toggleHamburger = () => {
@@ -27,12 +28,11 @@ class Navbar extends React.Component {
   }
 
   render() {
-
     return (
       <header>
         <div className="outer-container">
           <div className="header-title">
-            <p><Link to="/">Krewe</Link> / <span>{this.props.path}</span></p>
+            <p><Link to="/">Krewe</Link> / <span>{this.props.pageTitle}</span></p>
           </div>
           <nav className={`main-navigation ${this.state.navbarActiveClass}`}>
             <button className="mobile-toggle" onClick={() => this.toggleHamburger()}>

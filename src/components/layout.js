@@ -5,28 +5,28 @@ import useSiteMetaData from "./SiteMetadata"
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import "../scss/layout.scss";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageTitle }) => {
   const { title, description, image } = useSiteMetaData();
 
 
-const krewe = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#c31fad',
+  const krewe = createMuiTheme({
+    palette: {
+      primary: {
+        main: '#c31fad',
+      },
+      secondary: {
+        main: '#dedede',
+      },
     },
-    secondary: {
-      main: '#dedede',
+    typography: {
+      fontFamily: [
+        'Oxygen',
+        'Helvetica',
+        'Arial',
+        'sans-serif',
+      ].join(','),
     },
-  },
-  typography: {
-    fontFamily: [
-      'Oxygen',
-      'Helvetica',
-      'Arial',
-      'sans-serif',
-    ].join(','),
-  },
-});
+  });
 
   return (
     <ThemeProvider theme={krewe}>
@@ -34,7 +34,7 @@ const krewe = createMuiTheme({
         <Helmet>
           <html lang="en" />
           <meta charSet="utf-8" />
-          <title>{title}</title>
+          <title>{`${pageTitle} | ${title}`}</title>
           <meta name="description" content={description} />
           <meta name="theme-color" content="#fff" />
           <meta property="og:title" content={title} />
@@ -43,7 +43,7 @@ const krewe = createMuiTheme({
           <meta property="og:url" content="/" />
           <meta property="twitter:card" content="summary_large_image" />
         </Helmet>
-        <Navbar />
+        <Navbar pageTitle={pageTitle} />
         <main className="main-content">
           {children}
         </main>

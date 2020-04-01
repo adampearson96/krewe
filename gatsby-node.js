@@ -13,6 +13,23 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      row1image: File @fileByRelativePath
+      row2image: File @fileByRelativePath
+      row3image: File @fileByRelativePath
+      row4image: File @fileByRelativePath
+      row5image: File @fileByRelativePath
+    }
+  `
+  createTypes(typeDefs)
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`

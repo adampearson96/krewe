@@ -6,7 +6,7 @@ import "../scss/contact.scss"
 
 export default () => {
   return (
-    <Layout path="Contact">
+    <Layout pageTitle="Contact">
       <div id="page-contact-page">
         <div className="page-title">
           <div className="outer-container">

@@ -1,0 +1,207 @@
+@import "global";
+
+#page-individual-process-page {
+  .page-title {
+    .outer-container {
+
+    }
+  }
+  .page-content {
+    .hero-section {
+      display: block;
+      position: relative;
+      width: 100%;
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        .col-one {
+          display: block;
+          flex: 0 1 auto;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+        }
+      }
+    }
+    .row-one {
+      display: block;
+      position: relative;
+      width: 100%;
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        @include devices(computer) {
+          flex-flow: row nowrap;
+          align-items: center;
+        }
+        .col-one {
+          display: block;
+          flex: 0 1 auto;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          @include devices(computer) {
+            width: 50%;
+          }
+        }
+        .col-two {
+          display: block;
+          flex: 0 1 auto;
+          padding: 0;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          @include devices(computer) {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .row-two {
+      display: block;
+      position: relative;
+      width: 100%;
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        @include devices(computer) {
+          flex-flow: row nowrap;
+          align-items: center;
+        }
+        .col-one {
+          display: block;
+          flex: 0 1 auto;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          @include devices(computer) {
+            width: 50%;
+            order: 2;
+          }
+        }
+        .col-two {
+          display: block;
+          flex: 0 1 auto;
+          padding: 0;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          @include devices(computer) {
+            width: 50%;
+            order: 1;
+          }
+        }
+      }
+    }
+    .row-three {
+      display: block;
+      position: relative;
+      width: 100%;
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        @include devices(computer) {
+          flex-flow: row nowrap;
+          align-items: center;
+        }
+        .col-one {
+          display: block;
+          flex: 0 1 auto;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          @include devices(computer) {
+            width: 50%;
+          }
+        }
+        .col-two {
+          display: block;
+          flex: 0 1 auto;
+          padding: 0;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          @include devices(computer) {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .row-four {
+      display: block;
+      position: relative;
+      width: 100%;
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        @include devices(computer) {
+          flex-flow: row nowrap;
+          align-items: center;
+        }
+        .col-one {
+          display: block;
+          flex: 0 1 auto;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          @include devices(computer) {
+            width: 50%;
+            order: 2;
+          }
+        }
+        .col-two {
+          display: block;
+          flex: 0 1 auto;
+          padding: 0;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          @include devices(computer) {
+            width: 50%;
+            order: 1;
+          }
+        }
+      }
+    }
+    .row-five {
+      display: block;
+      position: relative;
+      width: 100%;
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        @include devices(computer) {
+          flex-flow: row nowrap;
+          align-items: center;
+        }
+        .col-one {
+          display: block;
+          flex: 0 1 auto;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          @include devices(computer) {
+            width: 50%;
+          }
+        }
+        .col-two {
+          display: block;
+          flex: 0 1 auto;
+          padding: 0;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          @include devices(computer) {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 const WorkTemplate = () => {
   return (
-    <Layout path="Work">
+    <Layout pageTitle="Work">
       <div id="page-individual-process-page">
         <div className="page-title">
           <div classNAme="outer-container">

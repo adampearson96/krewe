@@ -15,7 +15,7 @@ import "../scss/about.scss"
 export default ({ data }) => {
   
   return (
-    <Layout path="About">
+    <Layout pageTitle="About">
       <BodyClassName className="page-about-page">
         <div>
           <section className="page-title">

@@ -6,7 +6,7 @@ import "../scss/process.scss"
 
 export default () => {
   return (
-    <Layout path="Process">
+    <Layout pageTitle="Process">
       <div id="page-process-page">
         <div className="page-title">
           <div className="outer-container">
@@ -169,7 +169,7 @@ export default () => {
                         </g>
                       </a>
                       
-                      <a href="/process/prototype">
+                      <a href="/process/wireframes">
                         <g id="Wireframes"><rect class="cls-1" x="825" y="263.14" width="175" height="50"/>
                           <path class="cls-2" d="M865.94,289.55l3.52-10.34h2.4L875,289.65l3.13-10.44H881l-4.55,14.12h-2.74l-3-10.38-3.48,10.38h-2.7l-4.1-14.12h2.8Z"/>
                           <path class="cls-2" d="M884.82,281.17H882v-2.28h2.78Zm0,12.16H882V283h2.76Z"/>

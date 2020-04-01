@@ -9,7 +9,7 @@ import "../scss/index.scss"
 export default () => {
   
   return (
-    <Layout path="Home">
+    <Layout pageTitle="Home">
       <BodyClassName className="page-home-page">
         <section className="hero-section">
           <div className="outer-container">
