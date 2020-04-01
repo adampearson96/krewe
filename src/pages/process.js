@@ -44,8 +44,7 @@ export default () => {
               >
                 <div className="diagram">
                   <div className="mobile">
-
-                    <Button id="link-research" className="btn" variant="contained" color="primary" href="/contact">
+                    <Button id="link-research" className="btn" variant="contained" color="primary" href="/process/research">
                       Research
                     </Button>
                     <div id="arrow-1" className="arrow">
@@ -53,7 +52,7 @@ export default () => {
                         <path d="M24,6H0v4H24v6l8-8L24,0Z"/>
                       </svg>
                     </div>
-                    <Button id="link-analysis" className="btn" variant="contained" color="primary" href="/contact">
+                    <Button id="link-analysis" className="btn" variant="contained" color="primary" href="/process/analysis">
                       Analysis
                     </Button>
                     <div id="arrow-2" className="arrow">
@@ -61,7 +60,7 @@ export default () => {
                         <path d="M10,24V0H6V24H0l8,8,8-8Z"/>
                       </svg>
                     </div>
-                    <Button id="link-design" className="btn" variant="contained" color="primary" href="/contact">
+                    <Button id="link-design" className="btn" variant="contained" color="primary" href="/process/design">
                       Design
                     </Button>
                     <div id="arrow-3" className="arrow">
@@ -69,7 +68,7 @@ export default () => {
                         <path d="M8,10H32V6H8V0L0,8l8,8Z"/>
                       </svg>
                     </div>
-                    <Button id="link-prototype" className="btn" variant="contained" color="primary" href="/contact">
+                    <Button id="link-prototype" className="btn" variant="contained" color="primary" href="/process/prototype">
                       Prototype
                     </Button>
                     <div id="arrow-4" className="arrow">
@@ -77,7 +76,7 @@ export default () => {
                         <path d="M10,24V0H6V24H0l8,8,8-8Z"/>
                       </svg>
                     </div>
-                    <Button id="link-validate" className="btn" variant="contained" color="primary" href="/contact">
+                    <Button id="link-validate" className="btn" variant="contained" color="primary" href="/process/validate">
                       Validate
                     </Button>
                     <div id="arrow-5" className="arrow">
@@ -85,7 +84,7 @@ export default () => {
                         <path d="M24,6H0v4H24v6l8-8L24,0Z"/>
                       </svg>
                     </div>
-                    <Button id="link-wireframes" className="btn" variant="contained" color="primary" href="/contact">
+                    <Button id="link-wireframes" className="btn" variant="contained" color="primary" href="/process/wireframes">
                       Wireframes
                     </Button>
                     <div id="arrow-6" className="arrow">
@@ -93,7 +92,7 @@ export default () => {
                         <path d="M10,24V0H6V24H0l8,8,8-8Z"/>
                       </svg>
                     </div>
-                    <Button id="link-build" className="btn" variant="contained" color="primary" href="/contact">
+                    <Button id="link-build" className="btn" variant="contained" color="primary" href="/process/build">
                       Build
                     </Button>
                     <div id="arrow-7" className="arrow">
@@ -101,7 +100,7 @@ export default () => {
                         <path d="M8,10H32V6H8V0L0,8l8,8Z"/>
                       </svg>
                     </div>
-                    <Button id="link-test" className="btn" variant="contained" color="primary" href="/contact">
+                    <Button id="link-test" className="btn" variant="contained" color="primary" href="/process/test">
                       Test
                     </Button>
                   </div>
