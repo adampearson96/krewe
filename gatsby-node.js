@@ -3,12 +3,20 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `MarkdownRemark` && node.fileAbsolutePath.includes(`/processes/`)) {
     const slug = createFilePath({ node, getNode, basePath: `processes` })
     createNodeField({
       node,
       name: `slug`,
       value: `process${slug}`,
+    })
+  }
+  if (node.internal.type === `MarkdownRemark` && node.fileAbsolutePath.includes(`/work/`)) {
+    const slug = createFilePath({ node, getNode, basePath: `work` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: `work${slug}`,
     })
   }
 }
@@ -25,6 +33,9 @@ exports.createSchemaCustomization = ({ actions }) => {
       row3image: File @fileByRelativePath
       row4image: File @fileByRelativePath
       row5image: File @fileByRelativePath
+      row6image: File @fileByRelativePath
+      row7image: File @fileByRelativePath
+      row8image: File @fileByRelativePath
     }
   `
   createTypes(typeDefs)
@@ -32,9 +43,22 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const result = await graphql(`
+  const processes = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark( filter: { fileAbsolutePath: { regex: "/processes/" }}) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  const work = await graphql(`
+    query {
+      allMarkdownRemark( filter: { fileAbsolutePath: { regex: "/work/" }}) {
         edges {
           node {
             fields {
@@ -46,10 +70,21 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  processes.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/processTemplate.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: node.fields.slug,
+      },
+    })
+  })
+  work.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/workTemplate.js`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.

@@ -4,22 +4,22 @@ date: "2019-05-04"
 title: "Research"
 row1title: Usability Testing
 row1content: > 
-  UX is a research-based discipline, without it there is no UX –. Why? Because you can’t solve problems if you don’t know what they are.
-
-  Before designing anything, understanding the users and how they behaviour and interact is key to establishing what problems need solving.
-
-  Getting to know the consumer through:
-  Qualitative-observational research: eye tracking, usability testing and field studies
-
-  * Quantitative-observational: Google Analytics and A/B testing
+  Using ScreenFlow to observe the user completing a series of tasks and questions on a website. Establishing: 
+  
+  1. Goals
 
 
-  * Qualitative-attitudinal: interviews, focus groups and diary studies   
+  2. Behaviours 
+
+
+  3. Context, to understand how easy or difficult it is to complete the goals set, behaviour with the platform and the environment conducted in. 
   
 
-  * Quantitative-attitudinal: card sorting, customer feedback calls/emails and online surveys 
+  **When to test?**   
 
-  Not all research tools are necessary for all projects, but it is recommended that research is conducted within each category.
+  Early and often. Within research phase as well as prototype phase. 
+
+  Usability tests at the research phase help understand the problem, at prototype phase to validate the solution and testing phase to sanity check. 
 row2title: Online Surveys
 row2content: > 
   The easiest way to gather user requirements. Ideally, surveys should include qualitative and quantitative questions such as multiple choice or open answers. Online surveys need to consider the 3 Golden Questions:
@@ -50,14 +50,17 @@ row4image: ../media/a-b-testing.jpg
 row5image: ../media/usability-testing.jpg
 ---
 
-UX is a research-based discipline, without it there is no UX –. Why? Because you can’t solve problems if you don’t know what they are. 
+UX is a research-based discipline, without it there is no UX –. Why? Because you can’t solve problems if you don’t know what they are.
 
-Before designing anything, understanding the users and how they behaviour and interact is key to establishing what problems need solving.
+  Before designing anything, understanding the users and how they behaviour and interact is key to establishing what problems need solving.
 
-Getting to know the consumer through:
-Qualitative-observational research: eye tracking, usability testing and field studies
-Quantitative-observational: Google Analytics and A/B testing
-Qualitative-attitudinal: interviews, focus groups and diary studies
-Quantitative-attitudinal: card sorting, customer feedback calls/emails and online surveys
+  Getting to know the consumer through:
+  Qualitative-observational research: eye tracking, usability testing and field studies
 
-Not all research tools are necessary for all projects, but it is recommended that research is conducted within each category. 
+  * Quantitative-observational: Google Analytics and A/B testing
+
+  * Qualitative-attitudinal: interviews, focus groups and diary studies   
+
+  * Quantitative-attitudinal: card sorting, customer feedback calls/emails and online surveys 
+
+  Not all research tools are necessary for all projects, but it is recommended that research is conducted within each category.
