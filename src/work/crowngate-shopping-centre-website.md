@@ -48,7 +48,7 @@ row5content: >
 
 
 
-row1image: ''
+row1image: ../media/crowngate-homepage.jpg
 row2image: ''
 row3image: ''
 row4image: ''

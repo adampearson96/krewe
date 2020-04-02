@@ -1,5 +1,17 @@
 @import "global";
 
 #page-individual-work-page {
-  
+  .row {
+    display: block;
+    position: relative;
+    width: 100%;
+    .outer-container {
+      display: flex;
+      flex-flow: column nowrap;
+      .col {
+        display: block;
+        flex: 0 1 auto;
+      }
+    }
+  }
 }

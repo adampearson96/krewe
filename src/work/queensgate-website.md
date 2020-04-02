@@ -85,7 +85,7 @@ row6content: >
   * More pages visited before leaving the site, with a flow of homepage – stores – food and drink - Explore
 
 
-row1image: ''
+row1image: ../media/queensgate-homepage.jpg
 row2image: ''
 row3image: ''
 row4image: ''
