@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import showdown from "showdown";
 import Img from "gatsby-image"
+import Button from '@material-ui/core/Button'
 
 import "../scss/processTemplate.scss"
 
@@ -135,6 +136,18 @@ const ProcessTemplate = ({ data }) => {
                   <Img fluid={data.markdownRemark.frontmatter.row5image.childImageSharp.fluid} />
                 </div> : ''
               }
+            </div>
+          </div>
+          <div className="row-six">
+            <div className="outer-container">
+              <div className="col-one">
+                <Button className="btn" color="primary" href="/process">
+                  Back to Process
+                </Button>
+                <Button className="btn" variant="contained" color="primary" href={`/work/${data.markdownRemark.frontmatter.title}`}>
+                  View all {data.markdownRemark.frontmatter.title} projects
+                </Button>
+              </div>
             </div>
           </div>
         </div>

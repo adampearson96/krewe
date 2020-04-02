@@ -1,11 +1,6 @@
 @import "global";
 
 #page-individual-process-page {
-  .page-title {
-    .outer-container {
-
-    }
-  }
   .page-content {
     .hero-section {
       display: block;
@@ -199,6 +194,31 @@
           }
           @include devices(computer) {
             width: 50%;
+          }
+        }
+      }
+    }
+    .row-six {
+      display: block;
+      position: relative;
+      width: 100%;
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        .col-one {
+          display: block;
+          flex: 0 1 auto;
+          text-align: right;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+          }
+          .btn {
+            width: 100%;
+            @include devices(ipad) {
+              width: auto;
+              margin: 0 0 0 $spacing-s;
+            }
           }
         }
       }
