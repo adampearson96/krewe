@@ -30,7 +30,7 @@ row3content: >
 
 row1image: ../media/triangulation.png
 row2image: ../media/affinity-diagrams.png
-row3image: ../media/affinity-diagrams.png
+row3image: ../media/customer-journey-mapping.jpeg
 ---
 
 Now that that the research phase is complete, data can now be analysed to pinpoint any problems to be resolved. 

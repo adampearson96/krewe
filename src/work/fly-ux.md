@@ -2,7 +2,7 @@
 path: "/work/fly-ux"
 date: "2019-05-04"
 title: "Fly UX"
-projectSummary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+projectSummary: Creating wireframes through comprehensive research, analysis, design and prototyping for start-up airline, Fly UX
 skillsInvolved: 
   - Research
   - Analysis

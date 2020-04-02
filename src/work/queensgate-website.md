@@ -7,9 +7,7 @@ skillsInvolved:
   - Research
   - Analysis
   - Design
-  - Interactive Design
   - Prototyping
-  - Wireframes
 row1title: The Challenge
 row1content: >
   Create an online shop window representing the new brand, the retailers and its demographic. With popularity increasing for Google My Business, the website has to provide an interesting and engaging offering, to encourage and entice users to visit, explore and re-visit the website.

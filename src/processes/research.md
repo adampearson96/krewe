@@ -47,7 +47,7 @@ row1image: ../media/usability-testing.jpg
 row2image: ../media/online-surveys.jpg
 row3image: ../media/depth-interviews.jpg
 row4image: ../media/a-b-testing.jpg
-row5image: ../media/usability-testing.jpg
+row5image: ../media/competitor-analysis.png
 ---
 
 UX is a research-based discipline, without it there is no UX – Why? Because you can’t solve problems if you don’t know what they are.

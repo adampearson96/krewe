@@ -138,6 +138,19 @@ export default ({ data }) => {
                   data-sal-delay="600"
                   data-sal-easing="easeOutQuart"
                 >
+                  <h2>Who knew I liked…</h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="outer-container">
+                <div 
+                  className="col"
+                  data-sal="slide-up"
+                  data-sal-duration="300"
+                  data-sal-delay="600"
+                  data-sal-easing="easeOutQuart"
+                >
                   <div className="content">
                     <h3>I love a good</h3>
                     <p>Scary Movie</p>
