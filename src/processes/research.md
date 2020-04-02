@@ -50,17 +50,18 @@ row4image: ../media/a-b-testing.jpg
 row5image: ../media/usability-testing.jpg
 ---
 
-UX is a research-based discipline, without it there is no UX –. Why? Because you can’t solve problems if you don’t know what they are.
+UX is a research-based discipline, without it there is no UX – Why? Because you can’t solve problems if you don’t know what they are.
 
-  Before designing anything, understanding the users and how they behaviour and interact is key to establishing what problems need solving.
+Before designing anything, understanding the users and how they behaviour and interact is key to establishing what problems need solving.
 
-  Getting to know the consumer through:
-  Qualitative-observational research: eye tracking, usability testing and field studies
+Getting to know the consumer through:
 
-  * Quantitative-observational: Google Analytics and A/B testing
+* Qualitative-observational research: eye tracking, usability testing and field studies   
 
-  * Qualitative-attitudinal: interviews, focus groups and diary studies   
+* Quantitative-observational: Google Analytics and A/B testing   
 
-  * Quantitative-attitudinal: card sorting, customer feedback calls/emails and online surveys 
+* Qualitative-attitudinal: interviews, focus groups and diary studies   
 
-  Not all research tools are necessary for all projects, but it is recommended that research is conducted within each category.
+* Quantitative-attitudinal: card sorting, customer feedback calls/emails and online surveys  
+
+Not all research tools are necessary for all projects, but it is recommended that research is conducted within each category.
