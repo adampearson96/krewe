@@ -15,7 +15,6 @@
       padding: $spacing-s;
       @include devices(ipad) {
         padding: $spacing-xl;
-        width: 33.333%;
       }
       .outer-container {
         display: flex;
@@ -30,12 +29,29 @@
             height: auto;
             font-size: 0;
           }
+          .gatsby-image-wrapper {
+            @include devices(ipad) {
+              width: 50%;
+            }
+          }
           h3 {
             display: block;
             text-align: center;
             background: #e6e6e6;
             margin: 0;
             padding: $spacing-s;
+            @include devices(ipad) {
+              width: 50%;
+              background: none;
+            }
+          }
+          &.image {
+            @include devices(ipad) {
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: stretch;
+              align-items: center;
+            }
           }
           &.content {
             flex: none;
@@ -52,6 +68,10 @@
             pointer-events: none;
             transition: 300ms all ease;
             z-index: 2;
+            @include devices(ipad) {
+              width: 50%;
+              left: auto;
+            }
             .inner {
               display: flex;
               flex-flow: column nowrap;
@@ -85,6 +105,24 @@
             visibility: visible;
             pointer-events: all;
             transition: 300ms all ease;
+          }
+        }
+      }
+      @include devices(ipad) {
+        &:nth-child(even) {
+          .col {
+            &.image {
+              .gatsby-image-wrapper {
+                order: 2;
+              }
+              h3 {
+                order: 1;
+              }
+            }
+            &.content {
+              right: auto;
+              left: 0;
+            }
           }
         }
       }
