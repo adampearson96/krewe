@@ -35,8 +35,8 @@ row8title: End Product
 row8content: >
   A clear, simple and user-friendly website with the ability to promote to friends with a flight share button, increase return visits with an interactive and informative admin area and a structured linear flow to searching, booking and paying for flights. The design is interactive, perceivable and predictable, using clever features such as process indicators, digital affordances, IP recognition, error handling and inline validation.
 
-row1image: ../media/crowngate-homepage.jpg
-row2image: ''
+row1image: ../media/fly-ux-homepage.jpg
+row2image: ../media/fly-ux-homepage.jpg
 row3image: ''
 row4image: ''
 row5image: ''
