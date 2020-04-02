@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import showdown from "showdown";
 import Img from "gatsby-image"
-// import Button from '@material-ui/core/Button'
+import Button from '@material-ui/core/Button'
 
 import "../scss/workTemplate.scss"
 
@@ -160,6 +160,15 @@ const WorkTemplate = ({ data }) => {
                 </div>
               </div> : null
             }
+            <div className="row-nine">
+            <div className="outer-container">
+              <div className="col-one">
+                <Button className="btn" variant="contained" color="primary" href="/process">
+                  Back to Process
+                </Button>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>

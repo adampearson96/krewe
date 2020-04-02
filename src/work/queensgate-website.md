@@ -86,11 +86,9 @@ row6content: >
 
 
 row1image: ../media/queensgate-homepage.jpg
-row2image: ''
-row3image: ''
-row4image: ''
-row5image: ''
-row6image: ''
-row7image: ''
-row8image: ''
+row2image: ../media/queensgate-blog.png
+row3image: ../media/queensgate-explore.png
+row4image: ../media/queensgate-homepage.png
+row5image: ../media/queensgate-wireframes.png
+row6image: ../media/queensgate-homepage.jpg
 ---

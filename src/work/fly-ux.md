@@ -36,11 +36,11 @@ row8content: >
   A clear, simple and user-friendly website with the ability to promote to friends with a flight share button, increase return visits with an interactive and informative admin area and a structured linear flow to searching, booking and paying for flights. The design is interactive, perceivable and predictable, using clever features such as process indicators, digital affordances, IP recognition, error handling and inline validation.
 
 row1image: ../media/fly-ux-homepage.jpg
-row2image: ../media/fly-ux-homepage.jpg
-row3image: ''
-row4image: ''
-row5image: ''
-row6image: ''
-row7image: ''
-row8image: ''
+row2image: ../media/fly-ux-research.png
+row3image: ../media/fly-ux-analysis.jpeg
+row4image: ../media/fly-ux-design.png
+row5image: ../media/fly-ux-interactive-design.png
+row6image: ../media/fly-ux-prototyping.png
+row7image: ../media/fly-ux-wireframes.png
+row8image: ../media/fly-ux-homepage.jpg
 ---
