@@ -15,7 +15,7 @@
       padding: $spacing-s;
       @include devices(ipad) {
         padding: $spacing-xl;
-        width: 50%;
+        width: 33.333%;
       }
       .outer-container {
         display: flex;

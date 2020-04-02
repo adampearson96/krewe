@@ -42,8 +42,10 @@ export default ({ data }) => {
           </div>
         </div>
         <div className="page-content">
-          <div className="row-container">
-            {posts}
+          <div className="outer-container">
+            <div className="row-container">
+              {posts}
+            </div>
           </div>
           <div className="row-three">
             <div className="outer-container">
