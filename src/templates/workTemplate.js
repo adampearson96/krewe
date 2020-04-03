@@ -1,14 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import showdown from "showdown"
-import Img from "gatsby-image"
 import Button from '@material-ui/core/Button'
 import WorkCard from '../components/workCard'
 
 import "../scss/workTemplate.scss"
 
-const converter = new showdown.Converter();
 
 const WorkTemplate = ({ data }) => {
   return (

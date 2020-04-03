@@ -139,24 +139,21 @@
     .outer-container {
       display: flex;
       flex-flow: column nowrap;
+      align-items: flex-end;
       @include devices(ipad) {
-        flex-flow: row wrap;
-        align-items: flex-end;
+        flex-flow: row nowrap;
         justify-content: flex-end;
-
+        align-items: flex-end;
+        align-content: flex-end;
       }
       .col {
         display: block;
         flex: 0 1 auto;
-        width: 100%;
-        text-align: right;
-      }
-      h2 {
-        display: block;
-      }
-      a {
-        display: inline-block;
-        margin: 0 0 0 $spacing-l;
+        padding: $spacing-s;
+        @include devices(ipad) {
+          padding: $spacing-xl;
+          text-align: right;
+        }
       }
     }
   }

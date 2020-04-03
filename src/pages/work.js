@@ -51,12 +51,6 @@ export default ({ data }) => {
             <div className="outer-container">
               <div className="col">
                 <h2>Want to know how UX can work for you?</h2>
-                <Button 
-                  color="primary" 
-                  href="/portfolio"
-                >
-                  View all work
-                </Button>
                 <Button
                   variant="contained" 
                   color="primary" 

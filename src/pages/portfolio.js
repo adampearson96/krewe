@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import { Tween } from "react-gsap"
+import Button from '@material-ui/core/Button'
 
 import "../scss/portfolio.scss"
 
@@ -24,7 +25,7 @@ export default ({ data }) => {
       <div id="page-portfolio-page">
         <div className="page-title">
           <div className="outer-container">
-            <h1>Work</h1>
+            <h1>Portfolio</h1>
           </div>
         </div>
         <div className="page-content">
@@ -43,6 +44,20 @@ export default ({ data }) => {
                 >
                   {posts}
                 </Tween>
+              </div>
+            </div>
+            <div className="row-three">
+              <div className="outer-container">
+                <div className="col">
+                  <h2>See more work involving the UX process</h2>
+                  <Button
+                    variant="contained" 
+                    color="primary" 
+                    href="/work"
+                  >
+                    View work
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
