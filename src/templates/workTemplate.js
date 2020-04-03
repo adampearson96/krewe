@@ -161,14 +161,14 @@ const WorkTemplate = ({ data }) => {
               </div> : null
             }
             <div className="row-nine">
-            <div className="outer-container">
-              <div className="col-one">
-                <Button className="btn" variant="contained" color="primary" href="/process">
-                  Back to Process
-                </Button>
+              <div className="outer-container">
+                <div className="col-one">
+                  <Button className="btn" variant="contained" color="primary" href="/work">
+                    Back to Work
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>

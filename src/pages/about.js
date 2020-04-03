@@ -108,6 +108,13 @@ export default ({ data }) => {
                   >
                     <h2>Background and skills</h2>
                     <p>I have worked in integrated agencies for over 10 years, managing and delivering a number of client projects on and offline. In the last two years, working in a digital department has allowed me to deliver bespoke websites, micro-sites and ideas to support clients with their annual strategies. Implementing UX across all websites created the building blocks for design, successful build and flow to user experience.</p>
+                    <Button 
+                      variant="contained" 
+                      color="primary" 
+                      href="/portfolio"
+                    >
+                      View my portfolio
+                    </Button>
                   </div>
                 </div>
                 <div className="col">

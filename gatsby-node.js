@@ -19,6 +19,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: `work${slug}`,
     })
   }
+  if (node.internal.type === `MarkdownRemark` && node.fileAbsolutePath.includes(`/portfolio/`)) {
+    const slug = createFilePath({ node, getNode, basePath: `portfolio` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: `portfolio${slug}`,
+    })
+  }
 }
 
 exports.createSchemaCustomization = ({ actions }) => {
@@ -36,6 +44,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       row6image: File @fileByRelativePath
       row7image: File @fileByRelativePath
       row8image: File @fileByRelativePath
+      heroimage: File @fileByRelativePath
     }
   `
   createTypes(typeDefs)
@@ -69,6 +78,19 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
+  const portfolio = await graphql(`
+    query {
+      allMarkdownRemark( filter: { fileAbsolutePath: { regex: "/portfolio/" }}) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
 
   processes.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
@@ -85,6 +107,17 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/workTemplate.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: node.fields.slug,
+      },
+    })
+  })
+  portfolio.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/portfolioTemplate.js`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.

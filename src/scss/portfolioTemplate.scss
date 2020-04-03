@@ -1,0 +1,107 @@
+@import "global";
+
+#page-individual-portfolio-page {
+  .content-container {
+    .outer-container {
+      .row {
+        display: block;
+        position: relative;
+        width: 100%;
+        .outer-container {
+          display: flex;
+          flex-flow: column nowrap;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            flex-flow: row nowrap;
+            padding: $spacing-xl;
+          }
+          .col-one {
+            flex: 0 1 auto;
+            @include devices(ipad) {
+              width: 100%;
+            }
+          }
+          .col-two {
+            flex: 0 1 auto;
+            @include devices(ipad) {
+              width: 100%;
+            }
+            .link {
+              display: block;
+              position: relative;
+              width: 100%;
+              img {
+                display: block;
+                width: 100%;
+                height: auto;
+                font-size: 0;
+                pointer-events: none;
+              }
+              .overlay {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, .9);
+                transition: 300ms all cubic-bezier(0.5, 1, 0.89, 1);
+                @include devices(computer) {
+                  opacity: 0;
+                  visibility: hidden;
+                }
+                span {
+                  display: block;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  border: 1px solid $krewe-white;
+                  color: $krewe-white;
+                  padding: $spacing-s $spacing-m;
+                  font-size: 1rem;
+                  line-height: 1;
+                }
+              }
+              &:hover {
+                .overlay {
+                  display: block;
+                  opacity: 1;
+                  visibility: visible;
+                  transition: 300ms all cubic-bezier(0.5, 1, 0.89, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+      .row-two {
+        display: block;
+        position: relative;
+        width: 100%;
+        .outer-container {
+          display: flex;
+          flex-flow: column nowrap;
+          .col-one {
+            display: block;
+            flex: 0 1 auto;
+            text-align: right;
+            padding: $spacing-s;
+            @include devices(ipad) {
+              padding: $spacing-xl;
+            }
+            .btn {
+              width: 100%;
+              @include devices(ipad) {
+                width: auto;
+                margin: 0 0 0 $spacing-s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

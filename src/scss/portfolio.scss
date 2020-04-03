@@ -1,0 +1,51 @@
+@import "global";
+
+#page-portfolio-page {
+  .page-content {
+    display: block;
+    position: relative;
+    width: 100%;
+    .outer-container {
+      .row {
+        display: block;
+        position: relative;
+        width: 100%;
+        .outer-container {
+          display: flex;
+          flex-flow: column nowrap;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            flex-flow: row wrap;
+            justify-content: space-between;
+            padding: $spacing-xl;
+          }
+          .col {
+            display: block;
+            flex: 0 1 auto;
+            margin-bottom: $spacing-l;
+            @include devices(ipad) {
+              width: 47.5%;
+            }
+            @include devices(computer) {
+              width: 21.25%;
+            }
+            a {
+              display: block;
+              text-decoration: none;
+              text-align: center;
+              color: $krewe-black;
+              .content {
+                background: #e6e6e6;
+                margin: 0;
+                padding: $spacing-s;
+                h3 {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
