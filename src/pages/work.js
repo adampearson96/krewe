@@ -49,6 +49,7 @@ export default ({ data }) => {
           </div>
           <div className="row-three">
             <div className="outer-container">
+              <h2>Want to know how UX can work for you?</h2>
               <Button 
                 className="btn" 
                 variant="contained" 

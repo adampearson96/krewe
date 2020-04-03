@@ -4,12 +4,13 @@ date: "2019-05-04"
 title: "Fly UX"
 projectSummary: Creating wireframes through comprehensive research, analysis, design and prototyping for start-up airline, Fly UX
 skillsInvolved: 
-  - Research
-  - Analysis
-  - Design
-  - Interactive Design
-  - Prototyping
-  - Wireframes
+  - <a href="/process/research">Research</a>
+  - <a href="/process/analysis">Analysis</a>
+  - <a href="/process/design">Design</a>
+  - <a href="/process/design">Interactive Design</a>
+  - <a href="/process/prototype">Prototyping</a>
+  - <a href="/process/wireframes">Wireframes</a>
+
 row1title: The Challenge
 row1content: >
   With no existing website, start-up business Fly UX wanted to create a website that would excel in customer experience by providing users with a fluid, transparent and stress-free flow through the website. There was a clear focus on providing the customer with the right tools to easily search, book and pay for flights. With a secondary focus on adding extras to the booking without being re-directed to 3rd party websites and an uncomplicated check-in process.

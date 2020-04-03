@@ -29,8 +29,8 @@ row3content: >
   A diagram that visualises the customer experience as they interact with the website. It highlights aspects of the journey that needs to be fixed. Within the flow of using a website the customer will take many steps, whether ‘enter your details’ ‘get a quote’ ‘register online’, highlighting patterns within each step establishing user goals, behaviours, context, pain points and opportunities. The experience within each step is assessed if it’s positive or negative and mapped on the diagram. This indicates what needs to be fixed to ensure the user has a positive experience.
 
 row1image: ../media/triangulation.png
-row2image: ../media/affinity-diagrams.png
-row3image: ../media/customer-journey-mapping.jpeg
+row2image: ../media/customer-journey-mapping.jpeg
+row3image: ../media/affinity-diagrams.png
 ---
 
 Now that that the research phase is complete, data can now be analysed to pinpoint any problems to be resolved. 

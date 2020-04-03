@@ -30,6 +30,9 @@
         display: block;
         flex: 0 1 auto;
         width: 280px;
+        @include devices(ipad) {
+          width: 380px;
+        }
         img {
           display: block;
           width: 100%;

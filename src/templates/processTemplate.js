@@ -156,7 +156,7 @@ const ProcessTemplate = ({ data }) => {
                 <Button className="btn" color="primary" href="/process">
                   Back to Process
                 </Button>
-                <Button className="btn" variant="contained" color="primary" href={`/work/${data.markdownRemark.frontmatter.title}`}>
+                <Button className="btn" variant="contained" color="primary" href={`/work`}>
                   View all {data.markdownRemark.frontmatter.title} projects
                 </Button>
               </div>

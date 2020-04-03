@@ -226,9 +226,10 @@ export default () => {
                 data-sal-delay="600"
                 data-sal-easing="easeOutQuart"
               >
+                <h2>Have a project in mind?</h2>
                 <Button 
                   variant="contained" 
-                  color="primary" 
+                  color="secondary" 
                   href="/contact"
                   target="_blank"
                   rel="noopener noreferrer"

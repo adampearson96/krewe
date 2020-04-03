@@ -3,13 +3,13 @@ path: "/work/crowngate-shopping-centre-website"
 date: "2019-05-04"
 title: "Crowngate Shopping Centre Website"
 projectSummary: Turning a landing page to fully responsive website to inform consumers of centre’s offering.
-skillsInvolved: 
-  - Research
-  - Analysis
-  - Design
-  - Interactive Design
-  - Prototyping
-  - Wireframes
+skillsInvolved:
+  - <a href="/process/research">Research</a>
+  - <a href="/process/analysis">Analysis</a>
+  - <a href="/process/design">Design</a>
+  - <a href="/process/design">Interactive Design</a>
+  - <a href="/process/prototype">Prototyping</a>
+  - <a href="/process/wireframes">Wireframes</a>
 row1title: The Challenge
 row1content: >
   With only a retailer logo landing page, we were tasked to promote individual retailers with a dedicated page and inject new brand style into the website. The centre comprises of two separate sections with very different retail offerings, which needed to be clearly communicated on the website, along with a strong focus on food and drink.
@@ -38,8 +38,8 @@ row5title: End Product
 row5content: >
   After testing the initial homepage build, the top section was slightly amended to improve usability. The website brings the branding to life using clever scroll functionality and clearly communicates the centre’s offerings. Within each page there are links through to either the stores page or the F&B page, ensuring the user is directed to core offerings throughout their journey.
 
-  Results: 
 
+  **Results:**
 
   * Average time spent on the website increased to 1.27 minutes
   
@@ -50,7 +50,7 @@ row5content: >
 
 row1image: ../media/crowngate-homepage.jpg
 row2image: ../media/crowngate-restaurant.png
-row3image: ../media/crowngate-food.png
+row3image: ../media/crowngate-sitemap.png
 row4image: ../media/crowngate-wireframes.png
 row5image: ../media/crowngate-homepage.jpg
 ---

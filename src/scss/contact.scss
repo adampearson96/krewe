@@ -25,6 +25,11 @@
           width: 50%;
           padding: $spacing-l;
         }
+        img {
+          width: 50%;
+          height: auto;
+          font-size: 0;
+        }
       }
       .col-two {
         display: block;

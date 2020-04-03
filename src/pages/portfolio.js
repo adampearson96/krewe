@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby" 
 import Layout from "../components/layout"
 import Img from "gatsby-image"
+import { Tween } from "react-gsap"
 
 import "../scss/portfolio.scss"
 
@@ -30,7 +31,18 @@ export default ({ data }) => {
           <div className="outer-container">
             <div className="row">
               <div className="outer-container">
-                {posts}
+                <Tween
+                  staggerFrom={{
+                    opacity: 0
+                  }}
+                  staggerTo={{
+                    opacity: 1
+                  }}
+                  stagger={0.15}
+                  duration={1}
+                >
+                  {posts}
+                </Tween>
               </div>
             </div>
           </div>

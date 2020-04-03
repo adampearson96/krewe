@@ -4,10 +4,10 @@ date: "2019-05-04"
 title: "Queensgate Website"
 projectSummary: Outdated website rebrand and refresh
 skillsInvolved: 
-  - Research
-  - Analysis
-  - Design
-  - Prototyping
+  - <a href="/process/research">Research</a>
+  - <a href="/process/analysis">Analysis</a>
+  - <a href="/process/design">Design</a>
+  - <a href="/process/prototype">Prototyping</a>
 row1title: The Challenge
 row1content: >
   Create an online shop window representing the new brand, the retailers and its demographic. With popularity increasing for Google My Business, the website has to provide an interesting and engaging offering, to encourage and entice users to visit, explore and re-visit the website.
@@ -74,7 +74,8 @@ row6title: End Product
 row6content: >
   A brand optimised design, incorporating the brand’s tone of voice and positioning. A responsive design, encouraging flow through the website with relevant page links, a dedicated blog section and a food and drink page to entice the foodie demographic. 
   
-  Results: 
+
+  **Results:**
   
   * Session duration increased to 1.15 minutes
 
@@ -88,7 +89,7 @@ row6content: >
 row1image: ../media/queensgate-homepage.jpg
 row2image: ../media/queensgate-blog.png
 row3image: ../media/queensgate-explore.png
-row4image: ../media/queensgate-homepage.png
+row4image: ../media/queensgate-research.png
 row5image: ../media/queensgate-wireframes.png
 row6image: ../media/queensgate-homepage.jpg
 ---

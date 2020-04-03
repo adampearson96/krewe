@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import showdown from "showdown";
+import showdown from "showdown"
 import Img from "gatsby-image"
 import Button from '@material-ui/core/Button'
+import WorkCard from '../components/workCard'
 
 import "../scss/workTemplate.scss"
 
@@ -28,137 +29,67 @@ const WorkTemplate = ({ data }) => {
                   <h3>Skills Involved</h3>
                   <ul>
                     {data.markdownRemark.frontmatter.skillsInvolved.map(edge => 
-                      <li key={edge}>{edge}</li>  
+                      <li key={edge} dangerouslySetInnerHTML={{ __html: edge }}></li>  
                     )}
                   </ul>
                 </div>
               </div>
             </div>
             { !!data.markdownRemark.frontmatter.row2content ? 
-              <div className="row-two">
-                <div className="outer-container">
-                  <div className="col-one">
-                    <h3>{data.markdownRemark.frontmatter.row2title}</h3>
-                    { !!data.markdownRemark.frontmatter.row2image ? 
-                      <Img fluid={data.markdownRemark.frontmatter.row2image.childImageSharp.fluid} alt="" /> : null
-                    }
-                  </div>
-                  <div className="col-two">
-                    <div className="inner">
-                      <h3>{data.markdownRemark.frontmatter.row2title}</h3>
-                      <div className="content" dangerouslySetInnerHTML={{ __html: converter.makeHtml(data.markdownRemark.frontmatter.row2content) }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div> : null
+              <WorkCard 
+                row="row-two"
+                title={data.markdownRemark.frontmatter.row2title}
+                image={data.markdownRemark.frontmatter.row2image.childImageSharp.fluid}
+                content={data.markdownRemark.frontmatter.row2content} 
+              /> : null
             }
             { !!data.markdownRemark.frontmatter.row3content ? 
-              <div className="row-three">
-                <div className="outer-container">
-                  <div className="col-one">
-                    <h3>{data.markdownRemark.frontmatter.row3title}</h3>
-                    { !!data.markdownRemark.frontmatter.row3image ? 
-                      <Img fluid={data.markdownRemark.frontmatter.row3image.childImageSharp.fluid} alt="" /> : null
-                    }
-                  </div>
-                  <div className="col-two">
-                    <div className="inner">
-                      <h3>{data.markdownRemark.frontmatter.row3title}</h3>
-                      <div className="content" dangerouslySetInnerHTML={{ __html: converter.makeHtml(data.markdownRemark.frontmatter.row3content) }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div> : null
+              <WorkCard 
+                row="row-three"
+                title={data.markdownRemark.frontmatter.row3title}
+                image={data.markdownRemark.frontmatter.row3image.childImageSharp.fluid}
+                content={data.markdownRemark.frontmatter.row3content} 
+              /> : null
             }
             { !!data.markdownRemark.frontmatter.row4content ? 
-              <div className="row-four">
-                <div className="outer-container">
-                  <div className="col-one">
-                    <h3>{data.markdownRemark.frontmatter.row4title}</h3>
-                    { !!data.markdownRemark.frontmatter.row4image ? 
-                      <Img fluid={data.markdownRemark.frontmatter.row4image.childImageSharp.fluid} alt="" /> : null
-                    }
-                  </div>
-                  <div className="col-two">
-                    <div className="inner">
-                      <h3>{data.markdownRemark.frontmatter.row4title}</h3>
-                      <div className="content" dangerouslySetInnerHTML={{ __html: converter.makeHtml(data.markdownRemark.frontmatter.row4content) }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div> : null
+              <WorkCard 
+                row="row-four"
+                title={data.markdownRemark.frontmatter.row4title}
+                image={data.markdownRemark.frontmatter.row4image.childImageSharp.fluid}
+                content={data.markdownRemark.frontmatter.row4content} 
+              /> : null
             }
             { !!data.markdownRemark.frontmatter.row5content ? 
-              <div className="row-five">
-                <div className="outer-container">
-                  <div className="col-one">
-                    <h3>{data.markdownRemark.frontmatter.row5title}</h3>
-                    { !!data.markdownRemark.frontmatter.row5image ? 
-                      <Img fluid={data.markdownRemark.frontmatter.row5image.childImageSharp.fluid} alt="" /> : null
-                    }
-                  </div>
-                  <div className="col-two">
-                    <div className="inner">
-                      <h3>{data.markdownRemark.frontmatter.row5title}</h3>
-                      <div className="content" dangerouslySetInnerHTML={{ __html: converter.makeHtml(data.markdownRemark.frontmatter.row5content) }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div> : null
+              <WorkCard 
+                row="row-five"
+                title={data.markdownRemark.frontmatter.row5title}
+                image={data.markdownRemark.frontmatter.row5image.childImageSharp.fluid}
+                content={data.markdownRemark.frontmatter.row5content} 
+              /> : null
             }
             { !!data.markdownRemark.frontmatter.row6content ? 
-              <div className="row-six">
-                <div className="outer-container">
-                  <div className="col-one">
-                    <h3>{data.markdownRemark.frontmatter.row6title}</h3>
-                    { !!data.markdownRemark.frontmatter.row6image ? 
-                      <Img fluid={data.markdownRemark.frontmatter.row6image.childImageSharp.fluid} alt="" /> : null
-                    }
-                  </div>
-                  <div className="col-two">
-                    <div className="inner">
-                      <h3>{data.markdownRemark.frontmatter.row6title}</h3>
-                      <div className="content" dangerouslySetInnerHTML={{ __html: converter.makeHtml(data.markdownRemark.frontmatter.row6content) }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div> : null
+              <WorkCard 
+                row="row-six"
+                title={data.markdownRemark.frontmatter.row6title}
+                image={data.markdownRemark.frontmatter.row6image.childImageSharp.fluid}
+                content={data.markdownRemark.frontmatter.row6content} 
+              /> : null
             }
             { !!data.markdownRemark.frontmatter.row7content ? 
-              <div className="row-seven">
-                <div className="outer-container">
-                  <div className="col-one">
-                    <h3>{data.markdownRemark.frontmatter.row7title}</h3>
-                    { !!data.markdownRemark.frontmatter.row7image ? 
-                      <Img fluid={data.markdownRemark.frontmatter.row7image.childImageSharp.fluid} alt="" /> : null
-                    }
-                  </div>
-                  <div className="col-two">
-                    <div className="inner">
-                      <h3>{data.markdownRemark.frontmatter.row7title}</h3>
-                      <div className="content" dangerouslySetInnerHTML={{ __html: converter.makeHtml(data.markdownRemark.frontmatter.row7content) }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div> : null
+              <WorkCard 
+                row="row-seven"
+                title={data.markdownRemark.frontmatter.row7title}
+                image={data.markdownRemark.frontmatter.row7image.childImageSharp.fluid}
+                content={data.markdownRemark.frontmatter.row7content} 
+              /> : null
             }
             { !!data.markdownRemark.frontmatter.row8content ? 
-              <div className="row-eight">
-                <div className="outer-container">
-                  <div className="col-one">
-                    <h3>{data.markdownRemark.frontmatter.row8title}</h3>
-                    { !!data.markdownRemark.frontmatter.row8image ? 
-                      <Img fluid={data.markdownRemark.frontmatter.row8image.childImageSharp.fluid} alt="" /> : null
-                    }
-                  </div>
-                  <div className="col-two">
-                    <div className="inner">
-                      <h3>{data.markdownRemark.frontmatter.row8title}</h3>
-                      <div className="content" dangerouslySetInnerHTML={{ __html: converter.makeHtml(data.markdownRemark.frontmatter.row8content) }}></div>
-                    </div>
-                  </div>
-                </div>
-              </div> : null
+              <WorkCard 
+                row="row-eight"
+                title={data.markdownRemark.frontmatter.row8title}
+                image={data.markdownRemark.frontmatter.row8image.childImageSharp.fluid}
+                content={data.markdownRemark.frontmatter.row8content} 
+              /> : null
             }
             <div className="row-nine">
               <div className="outer-container">

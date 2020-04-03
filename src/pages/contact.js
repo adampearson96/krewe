@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
+import me from "../media/emma-marsh.jpg"
+
 import "../scss/contact.scss"
 
 export default () => {
@@ -16,8 +18,9 @@ export default () => {
         <div className="content-container">
           <div className="outer-container">
             <div className="col-one">
-              <p>Want me to be part of your Krewe or have a project in mind for my krewe?</p>
+              <p>Want me to be part of your KREWE or have a project in mind for my KREWE?</p>
               <p>Don't be a stranger, just say hello</p>
+              <img src={me} alt="" />
             </div>
             <div className="col-two">
               <h2>Get in touch</h2>
