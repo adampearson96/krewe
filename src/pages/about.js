@@ -79,6 +79,13 @@ export default ({ data }) => {
                     data-sal-easing="easeOutQuart"
                   >
                     <img src={processDiagram} alt="" />
+                    <Button 
+                      variant="contained" 
+                      color="primary" 
+                      href="/process"
+                    >
+                      View UX process
+                    </Button>
                   </div>
                 </div>
                 <div className="col">
@@ -92,13 +99,6 @@ export default ({ data }) => {
                     <h2>How can <span>KREWE</span> work for you?</h2>
                     <p>Working as part of your team to deliver a project, product or service.</p>
                     <p>Have a product in mind? With expertise in UX, design, build and testing, KREWE can deliver for you.</p> 
-                    <Button 
-                      variant="contained" 
-                      color="primary" 
-                      href="/process"
-                    >
-                      View UX process
-                    </Button>
                   </div>
                 </div>
               </div>
