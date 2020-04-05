@@ -19,8 +19,8 @@ export default () => {
               <div className="col">
                 <h3>What is UX?</h3>
                 <p>UX helps to solve a problem for the end user by creating a positive experience with a product.</p> 
-                <p>To deliver the solution, the UX process covers research, analysis, design, prototyping, validation and wireframing.</p>
-                <p>During research we are defining the problem. When we create a design, we are solving a problem. When we build the website, we are building the solution.</p>
+                <p>The UX process covers research, analysis, design, prototyping, validation and wireframing.</p>
+                <p>During research we are defining the problem. When we create a design, we are solving the problem. When we build the website, we are building the solution.</p>
                 <p>There are three types of design that makes a high-quality product:</p>
                 <ul>
                   <li>Functional design – what is it built for?</li>

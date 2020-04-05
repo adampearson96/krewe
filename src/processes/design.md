@@ -61,9 +61,9 @@ row5content: >
 
 
 row1image: ../media/information-architecture.png
-row2image: ../media/user-flow.png
+row2image: ../media/flow-diagram.png
 row3image: ../media/navigation.png
-row4image: ../media/flow-diagram.png
+row4image: ../media/user-flow.png
 row5image: ../media/design-principles.png
 ---
 

@@ -30,13 +30,13 @@ row2content: >
   With the average session duration lasting 2 minutes and 17 seconds, 26 seconds is relatively short, presenting a problem needing to be solved.
 row3title: Design
 row3content: >
-  Global and local navigation were identified within the site map, ensuring there was a dedicated area promoting the two shopping sections. The main objective of the website was to push users to three core offerings: retailers, F&B and the two shopping sections, therefore it was important that the user could access content from the nav and homepage.
+  Global and local navigation were identified within the site map, ensuring there was a dedicated area promoting the two shopping sections. The main objective was to push users to three core offerings: retailers, F&B and the two shopping sections, therefore it was important that the user could access content from the nav and homepage.
 row4title: Wireframes
 row4content: >
   Medium fidelity prototypes were created and tested with the user. Once validated, these were annotated to inform and instruct the developer. Notes included functionality instructions, store placement filters and categories and click through page directions.
 row5title: End Product
 row5content: >
-  After testing the initial homepage build, the top section was slightly amended to improve usability. The website brings the branding to life using clever scroll functionality and clearly communicates the centre’s offerings. Within each page there are links through to either the stores page or the F&B page, ensuring the user is directed to core offerings throughout their journey.
+  After testing the initial homepage build, the top section was slightly amended to improve usability. Bring the branding to life using clever scroll functionality, whcih clearly communicates the centre’s offerings. Within each page there are links through to either the stores page or the F&B page, ensuring the user is directed to core offerings throughout their journey.
 
 
   **Results:**
