@@ -2,14 +2,20 @@ import React from "react"
 import Layout from "../components/layout"
 import BodyClassName from 'react-body-classname'
 import { graphql } from "gatsby"
-import { Tween } from "react-gsap"
 import Button from '@material-ui/core/Button'
 
 
 import scary from "../media/scary.gif"
 import diy from "../media/diy.gif"
 import icecream from "../media/icecream.gif"
-import processDiagram from "../media/process-diagram-do-not-delete.svg"
+
+import iconOne from "../media/icon-box-one.svg"
+import iconTwo from "../media/icon-box-two.svg"
+import iconBridgeTheGap from "../media/icon-bridge-the-gap.svg"
+import iconCommunication from "../media/icon-communication.svg"
+import iconJoinTheDots from "../media/icon-join-the-dots.svg"
+import iconUserJourney from "../media/icon-user-journey.svg"
+
 import "../scss/about.scss"
 
 export default ({ data }) => {
@@ -24,9 +30,8 @@ export default ({ data }) => {
             </div>
           </section>
           <section className="content-container">
-            <div className="row" >
+            <div className="row row-one">
               <div className="outer-container">
-
                 <div className="col">
                   <div className="content">
                     <h2>Hi there, welcome to <span>KREWE</span>.</h2>
@@ -39,37 +44,47 @@ export default ({ data }) => {
                     <p>KREWE joins the dots, joining different stages through product creation, service and experience, making them all work together seamlessly.</p>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="row row-two">
+              <div className="outer-container">
                 <div className="col">
-                  <div className="rectangle">
-                    <Tween 
-                      wrapper={
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 76" id="rectangle" />
-                      }
-                      staggerFrom={{
-                        fill: "none"
-                      }}
-                      staggerTo={{
-                        fill: "#c31fad"
-                      }}
-                      stagger={0.1}
-                      duration={2}
-                      repeat={-1}
-                    >
-                      <rect x="0" y="38" width="38" height="38"/>
-                      <rect x="0" y="0" width="38" height="38"/>
-                      <rect x="38" y="38" width="38" height="38"/>
-                      <rect x="38" y="0" width="38" height="38"/>
-                      <rect x="76" y="38" width="38" height="38"/>
-                      <rect x="76" y="0" width="38" height="38"/>
-                      <rect x="114" y="38" width="38" height="38"/>
-                      <rect x="114" y="0" width="38" height="38"/>
-                    </Tween>
+                  <div className="wrapper">
+                    <img src={iconBridgeTheGap} alt="" />
+                    <p><strong>Bridging the gap</strong> between human and digital experience</p>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="wrapper">
+                    <img src={iconUserJourney} alt="" />
+                    <p><strong>Simplifying the user journey</strong> to the end goal</p>
+                  </div>
+                </div>
+                {/* <div className="col">
+                  <div className="wrapper">
+                    <img src={iconJoinTheDots} alt="" />
+                    <p><strong>Join the dots</strong> for a better experience</p>
+                  </div>
+                </div> */}
+                <div className="col">
+                  <div className="wrapper">
+                    <img src={iconCommunication} alt="" />
+                    <p><strong>Communicating information</strong> for an engaging interaction</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row row-three">
               <div className="outer-container">
+                <div 
+                  className="col-full"
+                  data-sal="slide-up"
+                  data-sal-duration="300"
+                  data-sal-delay="600"
+                  data-sal-easing="easeOutQuart"
+                >
+                  <h2>How can <span>KREWE</span> work for you?</h2>
+                </div>
                 <div className="col">
                   <div 
                     className="icon"
@@ -78,14 +93,11 @@ export default ({ data }) => {
                     data-sal-delay="600"
                     data-sal-easing="easeOutQuart"
                   >
-                    <img src={processDiagram} alt="" />
-                    <Button 
-                      variant="contained" 
-                      color="primary" 
-                      href="/process"
-                    >
-                      View UX process
-                    </Button>
+                    <img src={iconOne} alt="" />
+                    <div className="content">
+                      <h3>Part of your KREWE</h3>
+                      <p>Working as part of your team to deliver a project, product or service.</p>
+                    </div>
                   </div>
                 </div>
                 <div className="col">
@@ -96,14 +108,23 @@ export default ({ data }) => {
                     data-sal-delay="600"
                     data-sal-easing="easeOutQuart"
                   >
-                    <h2>How can <span>KREWE</span> work for you?</h2>
-                    <p>Working as part of your team to deliver a project, product or service.</p>
-                    <p>Have a product in mind? With expertise in UX, design, build and testing, KREWE can deliver for you.</p> 
+                    <img src={iconTwo} alt="" />
+                    <div className="content">
+                      <h3>Use my KREWE</h3>
+                      <p>Have a product in mind? With expertise in UX, design, build and testing, KREWE can deliver for you.</p>
+                    </div>
+                    <Button 
+                      variant="contained" 
+                      color="primary" 
+                      href="/process"
+                    >
+                      View UX process
+                    </Button>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row row-four">
               <div className="outer-container">
                 <div className="col">
                   <div 
@@ -143,7 +164,7 @@ export default ({ data }) => {
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row row-five">
               <div className="outer-container">
                 <div 
                   className="col"
@@ -156,7 +177,7 @@ export default ({ data }) => {
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row row-six">
               <div className="outer-container">
                 <div 
                   className="col"
@@ -208,7 +229,7 @@ export default ({ data }) => {
                     <Button 
                       variant="contained" 
                       color="primary" 
-                      href={data.file.publicURL}
+                      href={data.cv.publicURL}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -227,7 +248,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    file(extension: {eq: "pdf"}, name: {eq: "cv"}) {
+    cv: file(extension: {eq: "pdf"}, name: {eq: "cv"}) {
       publicURL
     }
   }
