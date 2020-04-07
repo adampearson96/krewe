@@ -87,10 +87,23 @@
               padding: $spacing-l;
               border: 1px solid #d3d3d3;
               height: 100%;
-              img {
+              svg {
                 width: auto;
                 height: 75px;
                 font-size: 0;
+                .fill {
+                  fill:#D3D3D3;
+                }
+              }
+              &:hover {
+                transition: 300ms all cubic-bezier(0.5, 1, 0.89, 1);
+                background-color: $krewe-purple;
+                color: $krewe-white;
+                svg {
+                  .fill {
+                    fill: $krewe-white;
+                  }
+                }
               }
             }
           }

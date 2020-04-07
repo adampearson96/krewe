@@ -157,6 +157,7 @@
           padding: $spacing-s;
           @include devices(ipad) {
             padding: $spacing-xl;
+            text-align: right;
           }
         }
       }

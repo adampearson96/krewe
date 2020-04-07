@@ -19,7 +19,7 @@ export default () => {
               <div className="col">
                 <h3>What is UX?</h3>
                 <p>UX helps to solve a problem for the end user by creating a positive experience with a product.</p> 
-                <p>The UX process covers research, analysis, design, prototyping, validation and wireframing.</p>
+                <p>The UX process covers <a href="/process/research">research</a>, <a href="/process/analysis">analysis</a>, <a href="/process/design">design</a>, <a href="/process/prototyping">prototyping</a>, <a href="/process/validation">validation</a> and <a href="/process/wireframing">wireframing</a>.</p>
                 <p>During research we are defining the problem. When we create a design, we are solving the problem. When we build the website, we are building the solution.</p>
                 <p>There are three types of design that makes a high-quality product:</p>
                 <ul>
@@ -30,6 +30,7 @@ export default () => {
                 <p>Delivering a solution with positive emotions ensures the end users requirements are met, that the product solves the problem and leaves them wanting more.</p>
                 <p>Why do we need UX? It reduces the risk of building the wrong thing. It reduces the risk of project failure!</p>
                 <p>Let’s go through each stage of the UX process below.</p>
+                <h3>Click on each section to find out more</h3>
               </div>
             </div>
           </div>
@@ -226,15 +227,15 @@ export default () => {
                 data-sal-delay="600"
                 data-sal-easing="easeOutQuart"
               >
-                <h2>Have a project in mind?</h2>
+                <h2>See how I have put UX to practice to shape the end result</h2>
                 <Button 
                   variant="contained" 
                   color="secondary" 
-                  href="/contact"
+                  href="/work"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Contact me
+                  View Projcts
                 </Button>
               </div>
             </div>
