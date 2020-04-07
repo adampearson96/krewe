@@ -232,10 +232,8 @@ export default () => {
                   variant="contained" 
                   color="secondary" 
                   href="/work"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
-                  View Projcts
+                  View Projects
                 </Button>
               </div>
             </div>
