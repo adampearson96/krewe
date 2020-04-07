@@ -19,13 +19,20 @@ export default () => {
             </div>
             <Timeline delay={4.5}>
               <Tween
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}
+                staggerFrom={{
+                  opacity: 0
+                }}
+                staggerTo={{
+                  opacity: 1
+                }}
+                stagger={0.25}
                 duration={1}
+                wrapper={
+                  <div className="subtitle" />
+                }
               >
-                <div className="subtitle">
-                  <p>Take me to…</p>
-                </div>
+                <h2>Transforming your digital ideas into reality with expertise in UX, end to end project management including design, build and testing.</h2>
+                <p>Take me to…</p>
               </Tween>
               <Tween
                 staggerFrom={{

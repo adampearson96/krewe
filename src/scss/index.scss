@@ -57,11 +57,14 @@
           width: 576px;
           margin-left: 296px;
         }
+        h2 {
+          margin: 0 0 $spacing-l 0;
+        }
         p {
           margin: 0;
           font-size: 1.25rem;
           line-height: 1;
-          font-weight: 700;
+          font-weight: 400;
         }
       }
       .links {
