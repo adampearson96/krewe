@@ -58,7 +58,11 @@
           margin-left: 296px;
         }
         h2 {
+          font-size: 1.25rem;
           margin: 0 0 $spacing-l 0;
+          @include devices(ipad) {
+            font-size: 1.5rem;
+          }
         }
         p {
           margin: 0;
