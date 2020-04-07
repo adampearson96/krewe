@@ -67,7 +67,7 @@ export default () => {
                   }
                 },
                 "color": {
-                  "value": "#000000"
+                  "value": "#ddd"
                 },
                 "shape": {
                   "type": "circle",
@@ -78,14 +78,9 @@ export default () => {
                   "polygon": {
                     "nb_sides": 5
                   },
-                  "image": {
-                    "src": "img/github.svg",
-                    "width": 100,
-                    "height": 100
-                  }
                 },
                 "opacity": {
-                  "value": 0.5,
+                  "value": 0.8,
                   "random": false,
                   "anim": {
                     "enable": false,
@@ -108,9 +103,9 @@ export default () => {
                   "enable": true,
                   "distance": 150,
                   "color": {
-                    "value": "#000000",
+                    "value": "#ddd",
                   },
-                  "opacity": 0.4,
+                  "opacity": 1,
                   "width": 1
                 },
                 "move": {
