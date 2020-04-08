@@ -42,6 +42,7 @@ const Layout = ({ children, pageTitle }) => {
           <meta property="og:image" content={image} />
           <meta property="og:url" content="/" />
           <meta property="twitter:card" content="summary_large_image" />
+          <body className={`page-${pageTitle}-page`} />
         </Helmet>
         <Navbar pageTitle={pageTitle} />
         <main className="main-content">

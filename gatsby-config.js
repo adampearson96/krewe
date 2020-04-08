@@ -20,7 +20,6 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-scroll-reveal`,
-    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
