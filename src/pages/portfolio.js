@@ -21,7 +21,7 @@ export default ({ data }) => {
   )
 
   return (
-    <Layout pageTitle="Portfolio">
+    <Layout pageTitle="Portfolio" pageClass="page-portfolio-page">
       <div id="page-portfolio-page">
         <div className="page-title">
           <div className="outer-container">

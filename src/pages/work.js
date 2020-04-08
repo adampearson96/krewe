@@ -34,7 +34,7 @@ export default ({ data }) => {
   )
 
   return (
-    <Layout pageTitle="Work">
+    <Layout pageTitle="Work" pageClass="page-work-page">
       <div id="page-work-page">
         <div className="page-title">
           <div className="outer-container">

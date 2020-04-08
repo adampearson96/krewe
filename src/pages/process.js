@@ -6,7 +6,7 @@ import "../scss/process.scss"
 
 export default () => {
   return (
-    <Layout pageTitle="Process">
+    <Layout pageTitle="Process" pageClass="page-process-page">
       <div id="page-process-page">
         <div className="page-title">
           <div className="outer-container">

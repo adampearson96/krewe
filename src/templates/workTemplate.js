@@ -9,7 +9,7 @@ import "../scss/workTemplate.scss"
 
 const WorkTemplate = ({ data }) => {
   return (
-    <Layout pageTitle="Work">
+    <Layout pageTitle="Work" pageClass="page-individual-work-page">
       <div id="page-individual-work-page">
         <div className="page-title">
           <div className="outer-container">

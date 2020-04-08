@@ -12,7 +12,7 @@ const converter = new showdown.Converter();
 const ProcessTemplate = ({ data }) => {
 
   return (
-    <Layout pageTitle={data.markdownRemark.frontmatter.title}>
+    <Layout pageTitle={data.markdownRemark.frontmatter.title} pageClass="page-individual-process-page">
       <div id="page-individual-process-page">
         <div className="page-title">
           <div className="outer-container">

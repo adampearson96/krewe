@@ -1,14 +1,10 @@
 import React from "react"
-import { Helmet } from "react-helmet"
+import CustomHelmet from "../components/customHelmet"
 import Navbar from "../components/navbar"
-import useSiteMetaData from "./SiteMetadata"
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import "../scss/layout.scss";
 
-const Layout = ({ children, pageTitle }) => {
-  const { title, description, image } = useSiteMetaData();
-
-
+const Layout = ({ children, pageTitle, pageClass }) => {
   const krewe = createMuiTheme({
     palette: {
       primary: {
@@ -31,19 +27,7 @@ const Layout = ({ children, pageTitle }) => {
   return (
     <ThemeProvider theme={krewe}>
       <div className="site-container">
-        <Helmet>
-          <html lang="en" />
-          <meta charSet="utf-8" />
-          <title>{`${pageTitle} | ${title}`}</title>
-          <meta name="description" content={description} />
-          <meta name="theme-color" content="#fff" />
-          <meta property="og:title" content={title} />
-          <meta property="og:description" content={description} />
-          <meta property="og:image" content={image} />
-          <meta property="og:url" content="/" />
-          <meta property="twitter:card" content="summary_large_image" />
-          <body className={`page-${pageTitle}-page`} />
-        </Helmet>
+        <CustomHelmet pageTitle={pageTitle} pageClass={pageClass} />
         <Navbar pageTitle={pageTitle} />
         <main className="main-content">
           {children}

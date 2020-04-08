@@ -10,7 +10,7 @@ import "../scss/index.scss"
 export default () => {
   
   return (
-    <Layout pageTitle="Home">
+    <Layout pageTitle="Home" pageClass="page-home-page">
       <BodyClassName className="page-home-page">
         <section className="hero-section">
           <div className="outer-container">

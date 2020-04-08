@@ -9,7 +9,7 @@ import "../scss/portfolioTemplate.scss"
 export default ({ data }) => {
   
   return (
-    <Layout pageTitle={data.markdownRemark.frontmatter.title}>
+    <Layout pageTitle={data.markdownRemark.frontmatter.title} pageClass="page-individual-portfolio-page">
       <div id="page-individual-portfolio-page">
         <div className="page-title">
           <div className="outer-container">
