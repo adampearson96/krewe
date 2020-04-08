@@ -4,97 +4,99 @@
   header {
     display: none;
   }
-  .particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  .hero-section {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: -ms-calc(100vh - 91px);
-    height: calc(100vh - 91px);
-    @include devices(ipad) {
-      height: -ms-calc(100vh - 50px);
-      height: calc(100vh - 50px);
+  #page-home-page {
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
     }
-    .outer-container {
-      display: flex;
+    .hero-section {
+      display: block;
       position: relative;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: flex-end;
       width: 100%;
-      height: 100%;
-      padding: $spacing-s;
+      height: -ms-calc(100vh - 91px);
+      height: calc(100vh - 91px);
       @include devices(ipad) {
-        align-items: center;
+        height: -ms-calc(100vh - 50px);
+        height: calc(100vh - 50px);
       }
-      .logo {
-        display: block;
-        flex: 0 1 auto;
-        width: 280px;
+      .outer-container {
+        display: flex;
+        position: relative;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        padding: $spacing-s;
         @include devices(ipad) {
-          width: 380px;
+          align-items: center;
         }
-        img {
+        .logo {
           display: block;
-          width: 100%;
-          height: auto;
-          font-size: 0;
-        }
-      }
-      .subtitle {
-        display: block;
-        flex: 0 1 auto;
-        width: 280px;
-        margin: $spacing-xxl 0 $spacing-s 0;
-        @include devices(ipad) {
-          width: 576px;
-          margin-left: 296px;
-        }
-        h2 {
-          font-size: 1.1rem;
-          margin: 0 0 $spacing-l 0;
+          flex: 0 1 auto;
+          width: 280px;
           @include devices(ipad) {
-            font-size: 1.5rem;
+            width: 380px;
+          }
+          img {
+            display: block;
+            width: 100%;
+            height: auto;
+            font-size: 0;
           }
         }
-        p {
-          margin: 0;
-          font-size: 1rem;
-          line-height: 1;
-          font-weight: 400;
-        }
-      }
-      .links {
-        display: block;
-        flex: 0 1 auto;
-        width: 280px;
-        font-size: 0;
-        @include devices(computer) {
-          width: 576px;
-          margin-left: 296px;
-        }
-        a {
-          display: inline-block;
-          width: 132px;
-          margin: $spacing-xs $spacing-s $spacing-xs 0;
-          text-transform: none;
-          text-align: center;
-          &:nth-child(2n) {
-            margin-right: 0;
-            @include devices(computer) {
-              margin-right: $spacing-s;
+        .subtitle {
+          display: block;
+          flex: 0 1 auto;
+          width: 280px;
+          margin: $spacing-xxl 0 $spacing-s 0;
+          @include devices(ipad) {
+            width: 576px;
+            margin-left: 296px;
+          }
+          h2 {
+            font-size: 1.1rem;
+            margin: 0 0 $spacing-l 0;
+            @include devices(ipad) {
+              font-size: 1.5rem;
             }
           }
-          &:nth-child(4) {
-            @include devices(computer) {
+          p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1;
+            font-weight: 400;
+          }
+        }
+        .links {
+          display: block;
+          flex: 0 1 auto;
+          width: 280px;
+          font-size: 0;
+          @include devices(computer) {
+            width: 576px;
+            margin-left: 296px;
+          }
+          a {
+            display: inline-block;
+            width: 132px;
+            margin: $spacing-xs $spacing-s $spacing-xs 0;
+            text-transform: none;
+            text-align: center;
+            &:nth-child(2n) {
               margin-right: 0;
+              @include devices(computer) {
+                margin-right: $spacing-s;
+              }
+            }
+            &:nth-child(4) {
+              @include devices(computer) {
+                margin-right: 0;
+              }
             }
           }
         }
