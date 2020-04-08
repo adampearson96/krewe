@@ -29,6 +29,9 @@ row5content: >
 row6title: Prototyping
 row6content: >
   The approved sketches were converted into Sketch and uploaded to InVision to create an interactive experience. For this type of website, a medium fidelity prototype was needed to test the functionality, navigation and flow. Once uploaded to InVision the user was able to test, amend and validate before the wireframes were created.
+
+
+  [View the FlyUX prototype](https://emma723106.invisionapp.com/overview/Project-13---desktop-prototype-ck74y67dm0g5j016gtf6fsn5d/screens?v=Bv5HaMmdNhVqUqrylmSiXQ%3D%3D&linkshare=urlcopied)
 row7title: Wireframes
 row7content: >
   The individual screen states were annotated with notes, instructions, rules and error messaging ready to be handed over to the developer.

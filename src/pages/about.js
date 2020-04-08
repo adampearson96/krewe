@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import BodyClassName from 'react-body-classname'
 import { graphql } from "gatsby"
 import Button from '@material-ui/core/Button'
 
