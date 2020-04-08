@@ -227,7 +227,7 @@ export default () => {
                 data-sal-delay="600"
                 data-sal-easing="easeOutQuart"
               >
-                <h2>See how I have put UX to practice to shape the end result</h2>
+                <h2>See how I have put UX into practice shaping the end result</h2>
                 <Button 
                   variant="contained" 
                   color="secondary" 

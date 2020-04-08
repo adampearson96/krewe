@@ -166,6 +166,12 @@
                 font-weight: 700;
               }
             }
+            .btn {
+              margin: $spacing-m 0;
+              @include devices(ipad) {
+                margin-bottom: 0;
+              }
+            }            
           }
         }
       }
