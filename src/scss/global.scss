@@ -11,8 +11,10 @@ body {
   padding: 0;
   color: $krewe-black;
 }
+
+body:not(.loaded),
 .react-cloak {
-   display: none !important;
+  opacity: 0;
 }
 main {
   padding: 49px 0 42px 0;

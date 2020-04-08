@@ -43,7 +43,7 @@ class CustomHelmet extends React.Component {
             <meta property="og:image" content={data.site.siteMetadata.image} />
             <meta property="og:url" content="/" />
             <meta property="twitter:card" content="summary_large_image" />
-            <body className={!this.state.reactLoaded ? 'react-cloak' : `${this.props.pageClass}` } />
+            <body className={!this.state.reactLoaded ? 'react-cloak' : `${this.props.pageClass} loaded` } />
           </Helmet>
         )}
       />
