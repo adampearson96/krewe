@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import BodyClassName from 'react-body-classname'
 import Particles from 'react-particles-js'
 import Logo from "../components/logo"
 import Button from '@material-ui/core/Button'

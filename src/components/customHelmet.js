@@ -3,20 +3,6 @@ import { Helmet } from "react-helmet"
 import { graphql, StaticQuery } from "gatsby";
 
 class CustomHelmet extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = { 
-      reactLoaded: false,
-    }
-  }
-
-  componentDidMount() {
-    this.setState({
-      reactLoaded: true
-    })
-  }
-
   render() {
     return (
       <StaticQuery
@@ -43,7 +29,7 @@ class CustomHelmet extends React.Component {
             <meta property="og:image" content={data.site.siteMetadata.image} />
             <meta property="og:url" content="/" />
             <meta property="twitter:card" content="summary_large_image" />
-            <body className={!this.state.reactLoaded ? 'react-cloak' : `${this.props.pageClass} loaded` } />
+            <body className={`${this.props.pageClass} loaded`} />
           </Helmet>
         )}
       />
