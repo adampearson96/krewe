@@ -74,6 +74,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1762136,
+        sv: 6
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Krewe",
