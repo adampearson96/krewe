@@ -1,0 +1,49 @@
+@import "global";
+
+.page-team-krewe-page {
+  .content-container {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    width: 100%;
+    .row {
+      display: block;
+      position: relative;
+      flex: 0 0 auto;
+      margin-bottom: $spacing-xxl;
+      padding: $spacing-xl;
+      &.row-one {
+        background: $krewe-light-grey;
+      }
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        @include devices(computer) {
+          flex-flow: row nowrap;
+        }
+        .col {
+          display: block;
+          flex: 0 1 auto;
+          width: 100%;
+          .image-container {
+            display: block;
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            margin: 0 auto 2rem auto;
+            img {
+              display: block;
+              width: 100%;
+              max-width: 350px;
+              height: auto!important;
+            }
+          }
+          @include devices(computer) {
+            padding: $spacing-xxl;
+            width: 33.33333%;
+          }
+        }
+      }
+    }
+  }
+}

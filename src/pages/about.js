@@ -228,6 +228,13 @@ export default ({ data }) => {
                   <div className="content">
                     <h3>Part of your KREWE</h3>
                     <p>Working as part of your team to deliver a project, product or service.</p>
+                    <Button 
+                      variant="contained" 
+                      color="primary" 
+                      href="/process"
+                    >
+                      View UX process
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -247,9 +254,9 @@ export default ({ data }) => {
                   <Button 
                     variant="contained" 
                     color="primary" 
-                    href="/process"
+                    href="/team-krewe"
                   >
-                    View UX process
+                    View Team KREWE
                   </Button>
                 </div>
               </div>
