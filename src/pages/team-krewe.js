@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
+import Button from '@material-ui/core/Button'
 import { graphql } from "gatsby"
 
 import "../scss/teamKrewe.scss"
@@ -58,6 +59,26 @@ export default ({ data }) => {
                   <h3>Developer</h3>
                   <p>Passionate about modern technology to create clean, crisp and engaging websites with a focus on UX and performance. Adam has worked in agencies for over 5 years creating anything from small tailored landing pages to full website builds. Adam develops mobile first and ensures all websites are responsive, accessibility optimised and are fully tested.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="row-three">
+            <div className="outer-container">
+              <div 
+                className="col"
+                data-sal="slide-up"
+                data-sal-duration="300"
+                data-sal-delay="600"
+                data-sal-easing="easeOutQuart"
+              >
+                <h2>Got a project in mind?</h2>
+                <Button 
+                  variant="contained" 
+                  color="primary" 
+                  href="/contact"
+                >
+                  Get in touch
+                </Button>
               </div>
             </div>
           </div>

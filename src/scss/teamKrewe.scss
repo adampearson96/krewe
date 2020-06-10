@@ -45,5 +45,28 @@
         }
       }
     }
+    .row-three {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: $spacing-s;
+      @include devices(ipad) {
+        padding: $spacing-xl;
+      }
+      .outer-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        .col {
+          display: block;
+          flex: 0 1 auto;
+          padding: $spacing-s;
+          @include devices(ipad) {
+            padding: $spacing-xl;
+            text-align: right;
+          }
+        }
+      }
+    }
   }
 }
