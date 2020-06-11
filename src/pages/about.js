@@ -256,7 +256,7 @@ export default ({ data }) => {
                     color="primary" 
                     href="/team-krewe"
                   >
-                    View Team KREWE
+                    Meet Team KREWE
                   </Button>
                 </div>
               </div>
