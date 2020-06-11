@@ -36,7 +36,7 @@ export default ({ data }) => {
                     <Img fluid={data.emma.childImageSharp.fluid} />
                   </div>
                   <h2>Emma Marsh</h2>
-                  <h3>UX and Proejct Management Specialist</h3>
+                  <h3>UX and Project Management Specialist</h3>
                   <p>I have worked in integrated agencies for over 10 years, managing and delivering projects on and offline. Working in a digital department has allowed me to deliver bespoke websites, micro-sites and ideas to support clients with their annual strategies. Implementing UX across all websites creates the building blocks for design, successful build and flow to user experience.</p>
                 </div>
               </div>
