@@ -374,7 +374,6 @@ export default ({ data }) => {
                   >
                     View CV
                   </Button>
-                  {data.krewe.publicURL}
                 </div>
               </div>
             </div>
@@ -388,9 +387,6 @@ export default ({ data }) => {
 export const query = graphql`
   query {
     cv: file(extension: {eq: "pdf"}, name: {eq: "cv"}) {
-      publicURL
-    }
-    krewe: file(extension: {eq: "pdf"}, name: {eq: "KREWE"}) {
       publicURL
     }
   }
