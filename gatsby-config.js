@@ -91,8 +91,6 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "fullscreen",
-        orientation: "portrait",
-        splash_pages: null,
         icon: `src/media/icon-512x512.png`,
       },
     },
