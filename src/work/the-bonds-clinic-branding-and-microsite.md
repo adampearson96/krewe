@@ -10,7 +10,6 @@ skillsInvolved:
   - <a href="/process/design">Interactive Design</a>
   - <a href="/process/prototype">Prototyping</a>
   - <a href="/process/wireframes">Wireframes</a>
-  - <a href="/process/development">Development</a>
 row1title: Background
 row1content: >
   The BONDS Clinic are a family run business based in Yorkshire specialising in addiction treatment for opioids, prescription medication, alcohol, cocaine and many more. They have become one of the global leaders in their field, delivering a treatment programme which places abstinence as priority and are on hand to deliver a holistic treatment, tailored to the individual’s needs.
