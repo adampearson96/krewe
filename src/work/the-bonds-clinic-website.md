@@ -83,7 +83,12 @@ row7content: >
 
   The new website is now customer-centric ensuring all flows cater to both target audiences. It has a clear CTA which is sensitive to the end user and the website not only provides information on the business services but also provides a reference point to find out more about drugs, causes, effects and behaviour of addiction. There is a strong presence of testimonials and video content to balance medical copy and aid with understanding. 
 
+row8title: Testimonial
+row8content: >
+  KREWE helped us redesign our brand from the ground up. A brand workshop and exercise realised our core values and brought the team together. This also gave us chance to understand our core target audiences and flowed nicely into user experience (UX)-based website design and build. Our new website now has significantly improved user flow, a better digital interface, less drop off rates, more conversion to contact us and excellent website feedback that really puts us as the digital cutting edge of our industry in addiction. KREWE has helped us engage and treat more people in addiction, having positive effect on individuals, families and in society. Thank you so much.’ 
 
+  
+  <b>Adam Beaini - Implant director @ The BONDS Clinic</b>
 
 row1image: ../media/the-bonds-clinic-website-homepage.jpg
 row2image: ../media/the-bonds-clinic-website-research.jpg
@@ -92,4 +97,5 @@ row4image: ../media/the-bonds-clinic-website-design.jpg
 row5image: ../media/the-bonds-clinic-website-wireframes.jpg
 row6image: ../media/the-bonds-clinic-website-homepage.jpg
 row7image: ../media/the-bonds-clinic-website-end-product.png
+row8image: ../media/the-bonds-clinic-website-homepage.jpg
 ---
