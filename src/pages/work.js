@@ -69,7 +69,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    work: allMarkdownRemark( filter: {fields: {slug: {regex: "/work/"}}}) {
+    work: allMarkdownRemark( sort: {order: DESC, fields: frontmatter___date}, filter: {fields: {slug: {regex: "/work/"}}}) {
       edges {
         node {
           id
