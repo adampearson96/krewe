@@ -3,6 +3,7 @@ path: "/work/the-ridge-medical-practice-website"
 date: "2021-04-01"
 title: "The Ridge Medical Practice Website"
 projectSummary: Provide credible knowledge advice for conditions, easy search functionality and reduction in face to face appointments
+websiteLink: https://www.thebondsclinic.com
 skillsInvolved:
   - <a href="/process/research">Research</a>
   - <a href="/process/analysis">Analysis</a>

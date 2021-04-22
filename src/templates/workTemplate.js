@@ -91,6 +91,11 @@ const WorkTemplate = ({ data }) => {
             <div className="row-nine">
               <div className="outer-container">
                 <div className="col-one">
+                  { !!data.markdownRemark.frontmatter.websiteLink ? 
+                    <Button className="btn" variant="contained" color="primary" href={data.markdownRemark.frontmatter.websiteLink} target="_blank">
+                      View Website
+                    </Button> : null
+                  }
                   <Button className="btn" variant="contained" color="primary" href="/work">
                     Back to Work
                   </Button>
@@ -113,6 +118,7 @@ export const query = graphql`
         title
         projectSummary
         skillsInvolved
+        websiteLink
         row1title
         row1content
         row1image {
