@@ -9,8 +9,8 @@ const path = require(`path`)
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Krewe',
-    description: 'Emma Marsh - Freelance',
+    title: 'Emma Marsh - Freelance',
+    description: 'Transforming your digital ideas into reality with expertise in UX, end to end project management including design, build and testing.',
     image: '',
   },
   plugins: [

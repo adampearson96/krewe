@@ -8,10 +8,10 @@ const Layout = ({ children, pageTitle, pageClass }) => {
   const krewe = createMuiTheme({
     palette: {
       primary: {
-        main: '#c31fad',
+        main: '#ab50d1',
       },
       secondary: {
-        main: '#dedede',
+        main: '#99d9da',
       },
     },
     typography: {
