@@ -34,7 +34,15 @@ export default ({ data }) => {
                   <p>I believe a product, a service and an experience are more successful when each discipline works in harmony - one unit, one interaction, one connection</p>
                   <p>I join the dots, joining different stages through product creation, service and experience, making them all work together seamlessly.</p>
                   <p>Working in agencies for 10+ years starting off a project manager to now a UX consultant, I understand the full-service requirements of a digital project that I factor in when I am working on the UX. This experience has helped me understand the broader picture of what is needed for the consumer when the product is live.</p>
-                  <p>I can provide UX research such as usability testing to Wireframing – View my process here</p>
+                  <p>I can provide UX research such as usability testing to Wireframing</p>
+                  <Button 
+                    variant="contained" 
+                    color="primary" 
+                    href="/portfolio"
+                    className="btn"
+                  >
+                    View my process
+                  </Button>
                 </div>
               </div>
             </div>

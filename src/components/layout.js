@@ -11,7 +11,7 @@ const Layout = ({ children, pageTitle, pageClass }) => {
         main: '#99D9DA',
       },
       secondary: {
-        main: '#99d9da',
+        main: '#99D9DA',
       },
     },
     typography: {

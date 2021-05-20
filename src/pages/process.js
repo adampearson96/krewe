@@ -230,7 +230,7 @@ export default () => {
                 <h2>See how I have put UX into practice shaping the end result</h2>
                 <Button 
                   variant="contained" 
-                  color="secondary" 
+                  color="primary" 
                   href="/work"
                 >
                   View Projects

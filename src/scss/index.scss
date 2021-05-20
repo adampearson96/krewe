@@ -88,18 +88,6 @@
           margin: $spacing-xs $spacing-s $spacing-xs 0;
           text-transform: none;
           text-align: center;
-          &:nth-child(1) {
-            background-color: #dd8814;
-          }
-          &:nth-child(2) {
-            background-color: #99d9d9;
-          }
-          &:nth-child(3) {
-            background-color: #b14dc9;
-          }
-          &:nth-child(4) {
-            background-color: #f4367c;
-          }
           &:nth-child(2n) {
             margin-right: 0;
             @include devices(computer) {

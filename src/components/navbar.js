@@ -32,7 +32,7 @@ class Navbar extends React.Component {
       <header>
         <div className="outer-container">
           <div className="header-title">
-            <p><Link to="/">Krewe</Link> / <span>{this.props.pageTitle}</span></p>
+            <p><Link to="/">Home</Link> / <span>{this.props.pageTitle}</span></p>
           </div>
           <nav className={`main-navigation ${this.state.navbarActiveClass}`}>
             <button className="mobile-toggle" onClick={() => this.toggleHamburger()}>
