@@ -48,7 +48,7 @@ row5content: >
 
 
 
-row1image: ../media/crowngate-homepage.jpg
+row1image: ../media/crowngate-cs-new.jpg
 row2image: ../media/crowngate-restaurant.png
 row3image: ../media/crowngate-sitemap.png
 row4image: ../media/crowngate-wireframes.png

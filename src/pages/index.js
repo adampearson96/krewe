@@ -16,7 +16,7 @@ export default () => {
             <div className="logo logo-large">
               <Logo />
             </div>
-            <Timeline delay={4.5}>
+            <Timeline delay={4}>
               <Tween
                 staggerFrom={{
                   opacity: 0

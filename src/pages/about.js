@@ -28,14 +28,13 @@ export default ({ data }) => {
             <div className="outer-container">
               <div className="col">
                 <div className="content">
-                  <h2>Hi there, welcome to <span>KREWE</span>.</h2>
-                  <p>
-                    Who is KREWE you may ask?
-                    <br />
-                    Quite simply, I am a freelancer integrating many different ideas, disciplines and skills to create one meaningful and relevant experience for users. 
-                  </p>
-                  <p>I believe a product, a service and an experience are more successful when each discipline works in harmony - one unit, one interaction, one connection - one KREWE.</p>
-                  <p>KREWE joins the dots, joining different stages through product creation, service and experience, making them all work together seamlessly.</p>
+                  <h2>Hi there, welcome to my website.</h2>
+                  <p>A little bit about me and what I offer as a freelancer.</p>
+                  <p>Quite simply, I am a freelancer integrating many different ideas, disciplines and skills to create one meaningful and relevant experience for users.</p>
+                  <p>I believe a product, a service and an experience are more successful when each discipline works in harmony - one unit, one interaction, one connection</p>
+                  <p>I join the dots, joining different stages through product creation, service and experience, making them all work together seamlessly.</p>
+                  <p>Working in agencies for 10+ years starting off a project manager to now a UX consultant, I understand the full-service requirements of a digital project that I factor in when I am working on the UX. This experience has helped me understand the broader picture of what is needed for the consumer when the product is live.</p>
+                  <p>I can provide UX research such as usability testing to Wireframing – View my process here</p>
                 </div>
               </div>
             </div>
@@ -214,7 +213,7 @@ export default ({ data }) => {
                 data-sal-delay="600"
                 data-sal-easing="easeOutQuart"
               >
-                <h2>How can <span>KREWE</span> work for you?</h2>
+                <h2>How I can work for you</h2>
               </div>
               <div className="col">
                 <div 
@@ -226,7 +225,7 @@ export default ({ data }) => {
                 >
                   <img src={iconOne} alt="" />
                   <div className="content">
-                    <h3>Part of your KREWE</h3>
+                    <h3>Part of your team</h3>
                     <p>Working as part of your team to deliver a project, product or service.</p>
                     <Button 
                       variant="contained" 
@@ -254,9 +253,9 @@ export default ({ data }) => {
                   <Button 
                     variant="contained" 
                     color="primary" 
-                    href="/team-krewe"
+                    href="https://www.onekrewe.co.uk"
                   >
-                    Meet Team KREWE
+                    Have a project in mind?
                   </Button>
                 </div>
               </div>

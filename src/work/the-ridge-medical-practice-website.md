@@ -55,7 +55,7 @@ row6title: End Product
 row6content: >
   The UI and website development were completed by the KREWE team. A key feature of the website is the search functionality. With time and increased data, this site will learn and adapt, better understanding what users are searching for and creating a more interactive search bar with the ability to ask questions.
 
-row1image: ../media/the-ridge-medical-practice-homepage.jpg
+row1image: ../media/ridge-cs-new.jpg
 row2image: ../media/the-ridge-medical-practice-research.jpg
 row3image: ../media/the-ridge-medical-practice-design.jpg
 row4image: ../media/the-ridge-medical-practice-wireframes.jpg

@@ -18,7 +18,7 @@ export default () => {
         <div className="content-container">
           <div className="outer-container">
             <div className="col-one">
-              <p>Want me to be part of your KREWE or have a project in mind for my KREWE?</p>
+              <p>Want me to work on a project or have a project in mind for my KREWE?</p>
               <p>Don't be a stranger, just say hello</p>
               <img src={me} alt="" />
             </div>
