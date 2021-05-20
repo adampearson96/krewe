@@ -16,7 +16,7 @@ const Layout = ({ children, pageTitle, pageClass }) => {
     },
     typography: {
       fontFamily: [
-        'Oxygen',
+        'Montserrat',
         'Helvetica',
         'Arial',
         'sans-serif',

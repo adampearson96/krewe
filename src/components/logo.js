@@ -19,8 +19,6 @@ export default () => {
         stagger={0.1}
         duration={2}
       >
-        <rect fill="#FFFFFF" x="0" y="0" width="575" height="395"></rect>
-        <rect id="Rectangle" stroke="#F8F6F0" fill="#F8F6F0" x="-19.5" y="0.5" width="594" height="394"></rect>
         <rect id="Rectangle" stroke="#99D9DA" fill="#99D9DA" x="346.5" y="0.5" width="146" height="139"></rect>
         <rect id="Rectangle" stroke="#F4367D" fill="#F4367D" x="91.5" y="70.5" width="322" height="172"></rect>
         <rect id="Rectangle" stroke="#F09212" fill-opacity="0.9" fill="#F09212" x="142.5" y="0.5" width="135" height="172"></rect>

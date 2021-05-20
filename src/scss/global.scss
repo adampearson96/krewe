@@ -24,6 +24,7 @@ main {
 }
 a {
   color: $krewe-purple;
+  font-weight: 700;
   transition: 300ms all ease;
   &:hover {
     opacity: .8;
