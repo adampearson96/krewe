@@ -49,7 +49,7 @@ export default () => {
             </div>
             <div className="col-three">
               <div className="link">
-                Email Address: <a href="mailto:emmalmarsh17@gmail.com" target="_blank" rel="noopener noreferrer">emmalmarsh17@gmail.com</a>
+                Email Address: <a href="mailto:hi@emmamarshfreelance.co.uk" target="_blank" rel="noopener noreferrer">hi@emmamarshfreelance.co.uk</a>
               </div>
               <div className="link">
                 Phone Number: <a href="tel:07956639816" target="_blank" rel="noopener noreferrer">07956 639816</a>
