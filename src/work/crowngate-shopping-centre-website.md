@@ -13,6 +13,8 @@ skillsInvolved:
 row1title: The Challenge
 row1content: >
   With only a retailer logo landing page, we were tasked to promote individual retailers with a dedicated page and inject new brand style into the website. The centre comprises of two separate sections with very different retail offerings, which needed to be clearly communicated on the website, along with a strong focus on food and drink.
+
+  Undertaken within full time employment - project to show account management experience only
 row2title: Research
 row2content: >
   Google Analytics highlighted:

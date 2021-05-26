@@ -14,7 +14,8 @@ skillsInvolved:
 row1title: The Challenge
 row1content: >
   With no existing website, start-up business Fly UX wanted to create a website that would excel in customer experience by providing users with a fluid, transparent and stress-free flow There was a clear focus on providing the customer with the right tools to easily search, book and pay for flights. With a secondary focus on adding extras to the booking without being re-directed to 3rd party websites and an uncomplicated check-in process.
-row2title: Research
+  
+  Undertaken within full time employment - project to show account management experience only
 row2content: >
   By conducting usability testing with ScreenFlow, depth interviews, online surveys using Survey Monkey and competitive benchmarking, giving insight into customer behaviour and uncovering any problems. Research highlighted that booking multiple flights, direct flights searches, sharing search results with friends or saving to an admin area to view and compare later, were either complicated or not possible. Flight prices were not visible or transparent until payment and extras and online check-in were redirected to 3rd party websites, making the process cumbersome. This helped identify problems that the new website needed to solve.
 row3title: Analysis

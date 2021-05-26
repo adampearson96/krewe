@@ -12,6 +12,8 @@ row1title: Challenge
 row1content: >
   New Dining room and bakehouse based in Boston Spa by chef Elizabeth Cottam, required a new simple one-page website which could host the ever-changing menus, fulfil pre-orders before the store opened, buy the products with requested time allocation and book tables.
 
+  Undertaken within full time employment - project to show account management experience only
+
 row2title: Design
 row2content: >
   As this is a one-page website – the menu tabs act as anchor links – and is a fixed top navigation as you scroll through the website – with quick access to section of the website you want to access. 

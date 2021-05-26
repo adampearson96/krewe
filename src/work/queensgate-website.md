@@ -11,6 +11,8 @@ skillsInvolved:
 row1title: The Challenge
 row1content: >
   Create an online shop window representing the new brand, the retailers and its demographic. With popularity increasing for Google My Business, the website has to provide an interesting and engaging offering, to encourage and entice users to visit, explore and re-visit the website.
+
+  Undertaken within full time employment - project to show account management experience only
 row2title: Research
 row2content: >
   With an existing website in place, we were able to look at Analytics, highlighting:
