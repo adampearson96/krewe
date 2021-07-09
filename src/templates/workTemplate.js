@@ -88,7 +88,7 @@ const WorkTemplate = ({ data }) => {
                 content={data.markdownRemark.frontmatter.row8content} 
               /> : null
             }
-            {/* { !!data.markdownRemark.frontmatter.videoLink ?  */}
+            { !!data.markdownRemark.frontmatter.videoLink ? 
               <div className="row-video">
                 <div className="outer-container">
                   <div className="col-one">
@@ -98,9 +98,8 @@ const WorkTemplate = ({ data }) => {
                     </video>
                   </div>
                 </div>
-              </div> 
-              {/* : null
-            } */}
+              </div> : null
+            } 
             <div className="row-nine">
               <div className="outer-container">
                 <div className="col-one">
