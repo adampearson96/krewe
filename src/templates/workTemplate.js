@@ -88,6 +88,19 @@ const WorkTemplate = ({ data }) => {
                 content={data.markdownRemark.frontmatter.row8content} 
               /> : null
             }
+            {/* { !!data.markdownRemark.frontmatter.videoLink ?  */}
+              <div className="row-video">
+                <div className="outer-container">
+                  <div className="col-one">
+                    <h2>Video showcase</h2>
+                    <video controls>
+                      <source src={data.markdownRemark.frontmatter.videoLink.publicURL} type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div> 
+              {/* : null
+            } */}
             <div className="row-nine">
               <div className="outer-container">
                 <div className="col-one">
@@ -119,6 +132,9 @@ export const query = graphql`
         projectSummary
         skillsInvolved
         websiteLink
+        videoLink {
+          publicURL
+        }
         row1title
         row1content
         row1image {

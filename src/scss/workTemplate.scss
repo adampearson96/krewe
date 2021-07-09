@@ -1,7 +1,8 @@
 @import "global";
 
 #page-individual-work-page {
-  .row-one {
+  .row-one,
+  .row-video {
     display: block;
     position: relative;
     width: 100%;
@@ -172,6 +173,43 @@
             width: auto;
             margin: 0 0 0 $spacing-s;
           }
+        }
+      }
+    }
+  }
+  .row-video {
+    .outer-container {
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      .col-one {
+        text-align: center;
+        h2 {
+          display: inline-block;
+          text-align: center;
+          margin-bottom: 4rem;
+          position: relative;
+          padding-left: $spacing-xs;
+          z-index: 5;
+          &:after {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 100%;
+            border: 2px solid $krewe-purple;
+            top: 0;
+            left: 0;
+            z-index: -1;
+          }
+        }
+        video {
+          display: block;
+          width: 100%;
+          max-width: 720px;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     }
