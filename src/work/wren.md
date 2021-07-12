@@ -34,6 +34,8 @@ row4content: >
   -	SEO considered throughout with social feed, video and reviews
   -	User flow considered throughout – directing users to relevant section on the website to encourage users to find out more about the brand and product range
 
+  Please note this was a personal project
+
 row1image: ../media/wren-prototype.png
 row2image: ../media/wren-research.jpg
 row3image: ../media/wren-old.png

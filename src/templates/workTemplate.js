@@ -93,7 +93,7 @@ const WorkTemplate = ({ data }) => {
                 <div className="outer-container">
                   <div className="col-one">
                     <h2>Video showcase</h2>
-                    <video controls>
+                    <video controls autoplay muted>
                       <source src={data.markdownRemark.frontmatter.videoLink.publicURL} type="video/mp4" />
                     </video>
                   </div>
