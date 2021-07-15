@@ -1,7 +1,7 @@
 ---
-path: "/work/b"
+path: "/work/ecommerce-wireframes"
 date: "2021-07-01"
-title: "B"
+title: "E-Commerce Wireframes"
 projectSummary: Immerse the consumer in the brand story to encourage purchase of product and cross sell of tastings and tours
 websiteLink: 
 skillsInvolved:
